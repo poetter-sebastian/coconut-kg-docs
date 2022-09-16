@@ -1,0 +1,2786 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/owl/owlapi/turtle" ],
+    "title" : {
+      "en" : "Coconut knowledge graph"
+    },
+    "iri" : "http://coconut-kg.io/ontology#",
+    "version" : "0.1",
+    "author" : [ "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ],
+    "description" : {
+      "undefined" : "Coconut base ontology"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "coco",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://coconut-kg.io/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Coconut knowledge graph",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "150",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Compound",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Compound",
+      "en" : "Compound"
+    },
+    "comment" : {
+      "en" : "A molecular compound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolecularFeatures",
+      "en" : "Molecular features"
+    },
+    "comment" : {
+      "en" : "Molecular features of a compound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fingerprint",
+      "en" : "Fingerprint"
+    },
+    "comment" : {
+      "en" : "Fingerprint and bitstrings of a chemical compound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UniqueIdentifiers",
+      "en" : "Unique Identifiers"
+    },
+    "comment" : {
+      "en" : "Unique identifiers of a molecular compound like smiles, inchikeys"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Class",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class",
+      "en" : "Unknown"
+    },
+    "comment" : {
+      "en" : "values currently not used but present in the data TODO"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxonomy",
+      "en" : "Taxonomy"
+    },
+    "comment" : {
+      "en" : "TODO Work in progress, data is shit here"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolecularDescriptors",
+      "en" : "Molecular Descriptors"
+    },
+    "comment" : {
+      "en" : "Descriptors of the molecule"
+    },
+    "attributes" : [ "external" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnalyticData",
+      "en" : "Analytic data"
+    },
+    "comment" : {
+      "en" : "The analytic data of a compound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "113",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "125",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolecularProperties",
+      "en" : "Molecular properties"
+    },
+    "comment" : {
+      "en" : "Molecular properties of a compound"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#String",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "String"
+    },
+    "attributes" : [ "external" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Geolocation",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Geolocation",
+      "en" : "Geolocation"
+    },
+    "comment" : {
+      "en" : "Geolocation where a compound can be found"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#Citation",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Citation",
+      "en" : "Citation"
+    },
+    "comment" : {
+      "en" : "The compound was mentioned in a article, book or document with a DOI"
+    },
+    "attributes" : [ "external" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataOriginSource",
+      "en" : "Data origin source"
+    },
+    "comment" : {
+      "en" : "The origin of a compounds data"
+    },
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "180",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "177",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "186",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "132",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "182",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "87",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "158",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "175",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "178",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "181",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "187",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "194",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularFeatures",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasMolecularFeatures",
+      "en" : "has molecular features"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has features."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#bondCount",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "bondCount",
+      "en" : "bond count"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Number of bonds within the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#taxonomyReferenceObjects",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "taxonomyReferenceObjects",
+      "en" : "taxonomy reference objects"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "TODO."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeTotalAtomNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "sugarFreeTotalAtomNumber",
+      "en" : "sugar free total atom number"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of total Atoms which are not sugar."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularProperties",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasMolecularProperties",
+      "en" : "has molecular properties"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has properties."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#minNumberOfRings",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "minNumberOfRings",
+      "en" : "minimum number of rings"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Minimum number of rings in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#containsLinearSugars",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "containsLinearSugars",
+      "en" : "contains linear sugars"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Information if there are any linear sugars present in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#isIdentifiedBy",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "isIdentifiedBy",
+      "en" : "is identified by"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound is identified by it's unique identifiers."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hybridizationRatioDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "hybridizationRatioDescriptor",
+      "en" : "hybridization ratio descriptor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Hybridization Ratio Descriptor (fraction of sp3 carbons to sp2 carbons)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#alogp",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "alogp",
+      "en" : "alog p"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Something about octanol-water partition TODO"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#totalAtomNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "totalAtomNumber",
+      "en" : "total atom number"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of total Atoms."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex1",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "kappaShapeIndex1",
+      "en" : "kappa shape index 1"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Classification of the molecular shape of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#pubchemFingerprint",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "pubchemFingerprint",
+      "en" : "PubChem fingerprint"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Fingerprint sequence of PubChem database."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex2",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "kappaShapeIndex2",
+      "en" : "kappa shape index 2"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Classification of the molecular shape of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex3",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "kappaShapeIndex3",
+      "en" : "kappa shape index 3"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Classification of the molecular shape of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#simpleSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "simpleSmiles",
+      "en" : "simple smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Simple Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#nplSugarScore",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "nplSugarScore",
+      "en" : "NPL sugar score"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "NP‐likeness score computed on the glycosylated molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#originalInchi",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "originalInchi",
+      "en" : "original inchi"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Original International Chemical Identifier."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#vabcDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "vabcDescriptor",
+      "en" : "vabc descriptor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Volume descriptor"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#wienerPolarityNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "wienerPolarityNumber",
+      "en" : "wiener polarity number"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Dataset has it as weiner, but it's from a Prof. Wiener TODO."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#xRefs",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "xRefs",
+      "en" : "cross references"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Crossreferences to the sources where the compound can be found."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#fragmentComplexityDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "fragmentComplexityDescriptor",
+      "en" : "fragment complexity descriptor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Class that returns the complexity of a system. The complexity is defined as (Nilakantan, R. et. al.. Journal of chemical information and modeling. 2006. 46)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#amralogp",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "amralogp",
+      "en" : "amr alog p "
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "AMR—molar refractivity. TODO"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#maxNumberOfRings",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "maxNumberOfRings",
+      "en" : "maximum number of rings"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Maximum number of rings in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#fsp3",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "fsp3",
+      "en" : "fsp3"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "This descriptor is characterizing non-flatness of a molecule"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#extendedFingerprint",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "extendedFingerprint",
+      "en" : "extended fingerprint"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Fingerprint sequence of TODO database."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberOfCarbons",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "numberOfCarbons",
+      "en" : "number of carbons"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of carbon atoms in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#fmfDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "fmfDescriptor",
+      "en" : "fmf descriptor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "FMF descriptor characterizing complexity of a molecule. The descriptor is described in (Yang, Y. et. al.. J. Med. Chem.. 2010. ASAP) and is an approach to characterizing molecular complexity based on the Murcko framework present in the molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#geoLocation",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "geoLocation",
+      "en" : "geo location"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "Areas where the compound can be found."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#originalSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "originalSmiles",
+      "en" : "original smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Original Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasTaxonomyData",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasTaxonomyData",
+      "en" : "has taxonomy data"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has a taxonomy structure."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "sugarFreeSmiles",
+      "en" : "sugar free smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Sugar free Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#containsSugar",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "containsSugar",
+      "en" : "contains sugar"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Information if the compound contains sugar."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#originalInchiKey",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "originalInchiKey",
+      "en" : "original inchi key"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Original International Chemical Identifier Key."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#circularFingerprint",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "circularFingerprint",
+      "en" : "circular fingerprint"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Fingerprint sequence of TODO database."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#petitjeanNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "petitjeanNumber",
+      "en" : "petitjean Number"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "According to the Petitjean definition, the eccentricity of a vertex corresponds to the distance from the vertex to the most remote vertex in the graph. The distance is obtained from the distance matrix as the count of edges between the two vertices."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#cas",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "cas",
+      "en" : "cas"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "CAS Registry Number."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#molecularFormula",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "molecularFormula",
+      "en" : "molecular formula"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Molecular formula of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasFingerprint",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasFingerprint",
+      "en" : "has fingerprint"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has a specific fingerprints."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#bcutDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "bcutDescriptor",
+      "en" : "bcut descriptor"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "BCUT decriptor (Eigenvalue based). Eigenvalue based descriptor noted for its utility in chemical diversity."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "fragmentsWithSugar",
+      "en" : "fragments with Sugar"
+    },
+    "domain" : "87",
+    "comment" : {
+      "en" : "List of circular fragments (molecular signatures) of the whole NP."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#pubchemBitsString",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "pubchemBitsString",
+      "en" : "PubChem bits string"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "PubChem fingerprint in MongoDB BinData format."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#dataOriginatedFrom",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "dataOriginatedFrom",
+      "en" : "data originated from"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compounds data has been taken from a origin source."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragmentsPseudoSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "ertlFunctionalFragmentsPseudoSmiles",
+      "en" : "ERTL functional fragments pseudo smiles"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "List of Ertl Functional Groups in pseudo SMILES."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberSpiroAtoms",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "numberSpiroAtoms",
+      "en" : "number of spiro atoms"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Number of atoms that are common to two rings in the molecule of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#zagrebIndex",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "zagrebIndex",
+      "en" : "zagreb index"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The sum of the squares of atom degree over all heavy atoms i."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeGeom",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "petitjeanShapeGeom",
+      "en" : "petitjean shape geom"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The geometric shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#textTaxa",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "textTaxa",
+      "en" : "text Taxa"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "TODO."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#eccentricConnectivityIndexDescriptor",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "105",
+    "label" : {
+      "IRI-based" : "eccentricConnectivityIndexDescriptor",
+      "en" : "eccentric connectivity index descriptor"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "A topological descriptor combining distance and adjacency information."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#cleanSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "cleanSmiles",
+      "en" : "clean smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Clean Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#lipinskiRuleOf5Failures",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "lipinskiRuleOf5Failures",
+      "en" : "Lipinski rule of 5 failures"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "absoluteSmiles",
+      "en" : "absolute smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Absolute smiles of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#containsRingSugars",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "containsRingSugars",
+      "en" : "contains ring sugars"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Information if there are any ring sugars present in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#heavyAtomNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "heavyAtomNumber",
+      "en" : "heavy atom number"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of heavy Atoms."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragments",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "113",
+    "label" : {
+      "IRI-based" : "ertlFunctionalFragments",
+      "en" : "ERTL functional fragments"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "List of Ertl Functional Groups."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#simpleInchi",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "simpleInchi",
+      "en" : "simple inchi"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Simple International Chemical Identifier."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#alogp2",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "alogp2",
+      "en" : "alog p2"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Something about octanol-water partition TODO"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#nameTrustLevel",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "nameTrustLevel",
+      "en" : "name trust level"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Trust level of given compound name."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasAnalyticData",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasAnalyticData",
+      "en" : "has analytic data"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has collected analytic data of it."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmilesSources",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "132",
+    "label" : {
+      "IRI-based" : "absoluteSmilesSources",
+      "en" : "absolute smiles sources"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Source databases of the absolute smiles."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#pubchemBits",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "pubchemBits",
+      "en" : "PubChem bits"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "PubChem fingerprint in MongoDB BinData format."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hBondAcceptorCount",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "hBondAcceptorCount",
+      "en" : "hydrogen bond acceptor count"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#manholdlogp",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "manholdlogp",
+      "en" : "manholdlogp"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "LogP descriptor (Mannhold version)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeHeavyAtomNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "sugarFreeHeavyAtomNumber",
+      "en" : "sugar free heavy atom number"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of heavy Atoms which are not sugar."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#tpsaEfficiency",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "tpsaEfficiency",
+      "en" : "tpsa efficiency"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Fractional polar surface area descriptor."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#nplNohScore",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "nplNohScore",
+      "en" : "NPL-NOH score"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "NP‐likeness score computed on the nitrolic acid molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeTopo",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "petitjeanShapeTopo",
+      "en" : "petitjean shape topo"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The topological shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#citationDoi",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "citationDoi",
+      "en" : "citation DOI."
+    },
+    "domain" : "150",
+    "comment" : {
+      "en" : "DOI of publications the compound has been mentioned."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#wienerPathNumber",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "158",
+    "label" : {
+      "IRI-based" : "wienerPathNumber",
+      "en" : "wiener path number"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Dataset has it as weiner, but it's from a Prof. Wiener TODO."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberOfNitrogens",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "numberOfNitrogens",
+      "en" : "number of nitrogens"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of nitrogen atoms in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#annotationLevel",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "annotationLevel",
+      "en" : "annotation level"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Annotation level of the NP (from 1 to 5)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#nplScore",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "nplScore",
+      "en" : "NPL score"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The likelyhood of the compound to be a natural product, ranges from -5 (less likely) to 5 (very likely)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#simpleInchiKey",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "simpleInchiKey",
+      "en" : "simple inchi key"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Simple International Chemical Identifier Key."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#vertexAdjMagnitude",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "vertexAdjMagnitude",
+      "en" : "vertex Adj Magnitude"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Vertex adjacency information TODO"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#gravitationalIndexHeavyAtoms",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "gravitationalIndexHeavyAtoms",
+      "en" : "gravitational index heavy atoms"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Gravitational index descriptor (heavy atoms only). Theses are calculated from the 3D molecular structure, which is defined with coordinates of all atoms in the molecule."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasGeolocation",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasGeolocation",
+      "en" : "has geo location"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound can be found at certain geo locations."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hBondDonorCount",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "hBondDonorCount",
+      "en" : "hydrogen bond donor count"
+    },
+    "domain" : "27",
+    "comment" : {
+      "en" : "Donor count is the sum of the atoms in the molecule which have H donor property."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#xlogp",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "xlogp",
+      "en" : "x log p"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Prediction of logP based on the atom-type method calld XlogP. Requires all hydrogens to be explicit."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "172"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#uniqueSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "175",
+    "label" : {
+      "IRI-based" : "uniqueSmiles",
+      "en" : "unique smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Unique Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#aquisitionDate",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "177",
+    "label" : {
+      "IRI-based" : "aquisitionDate",
+      "en" : "aquisition date"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "The date the compound data was aquired from the source."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasCitation",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "150",
+    "label" : {
+      "IRI-based" : "hasCitation",
+      "en" : "has citation"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound was cited in a document identifiyable by a DOI."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "178"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#apol",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "180",
+    "label" : {
+      "IRI-based" : "apol",
+      "en" : "apol"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Sum of the atomic polarizabilities (including implicit hydrogens)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#fragments",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "182",
+    "label" : {
+      "IRI-based" : "fragments",
+      "en" : "fragments"
+    },
+    "domain" : "87",
+    "comment" : {
+      "en" : "List of circular fragments (molecular signatures) of the deglycosylated NP."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#idInSource",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "idInSource",
+      "en" : "id in source"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Id the compound had in it's source database."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#molecularWeight",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "135",
+    "label" : {
+      "IRI-based" : "molecularWeight",
+      "en" : "molecular weight"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Molecular weight of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "184"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#deepSmiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "123",
+    "label" : {
+      "IRI-based" : "deepSmiles",
+      "en" : "deep smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Deep Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#smiles",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "smiles",
+      "en" : "smiles"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#synonyms",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "synonyms",
+      "en" : "synonyms"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Synonyme names of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#baseId",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "186",
+    "label" : {
+      "IRI-based" : "baseId",
+      "en" : "base Id"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Object Id within the coconut database."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#numberOfOxygens",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "numberOfOxygens",
+      "en" : "number of oxygens"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Number of oxygen atoms in the compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularDescriptors",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "hasMolecularDescriptors",
+      "en" : "has molecular descriptors"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "A compound has molecular descriptors."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "191"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#bpol",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "bpol",
+      "en" : "bpol"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens) with polarizabilities taken from http://www.sunysccc.edu/academic/mst/ptable/p-table2.htm This descriptor assuemes 2-centered bonds."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#source",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "source",
+      "en" : "source"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Source of the data."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#foundInDatabases",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "foundInDatabases",
+      "en" : "found in databases"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "Nametags of databases where the compound can be found."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "194"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#topoPSA",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "152",
+    "label" : {
+      "IRI-based" : "topoPSA",
+      "en" : "topo PSA"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#murkoFramework",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "murkoFramework",
+      "en" : "murcko framework"
+    },
+    "domain" : "17",
+    "comment" : {
+      "en" : "Molecule string to make it compatible using the Bemis-Murcko framework."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "196"
+  }, {
+    "iri" : "http://www.semanticweb.org/owl/owlapi/turtle#name",
+    "baseIri" : "http://www.semanticweb.org/owl/owlapi/turtle",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Given name of a compound."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "197"
+  } ]
+}

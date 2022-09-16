@@ -1,0 +1,929 @@
+@prefix : <http://coconut-kg.io/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://coconut-kg.io/ontology#> .
+
+<http://coconut-kg.io/ontology#> rdf:type owl:Ontology ;
+                                  <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ;
+                                  <http://purl.org/dc/terms/description> "Coconut base ontology" ;
+                                  <http://purl.org/dc/terms/title> "Coconut knowledge graph"@en ;
+                                  <http://purl.org/vocab/vann/preferredNamespacePrefix> "coco" ;
+                                  <http://purl.org/vocab/vann/preferredNamespaceUri> "http://coconut-kg.io/ontology#" ;
+                                  owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#dataOriginatedFrom
+<http://www.semanticweb.org/owl/owlapi/turtle#dataOriginatedFrom> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                                  rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                                  rdfs:comment "A compounds data has been taken from a origin source."@en ;
+                                                                  rdfs:label "data originated from"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fragments
+<http://www.semanticweb.org/owl/owlapi/turtle#fragments> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                         rdfs:range xsd:String .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar
+<http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                                  rdfs:range xsd:String .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasAnalyticData
+<http://www.semanticweb.org/owl/owlapi/turtle#hasAnalyticData> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                               rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                               rdfs:comment "A compound has collected analytic data of it."@en ;
+                                                               rdfs:label "has analytic data"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasCitation
+<http://www.semanticweb.org/owl/owlapi/turtle#hasCitation> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                           rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Citation> ;
+                                                           rdfs:comment "A compound was cited in a document identifiyable by a DOI."@en ;
+                                                           rdfs:label "has citation"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasFingerprint
+<http://www.semanticweb.org/owl/owlapi/turtle#hasFingerprint> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                              rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                              rdfs:comment "A compound has a specific fingerprints."@en ;
+                                                              rdfs:label "has fingerprint"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasGeolocation
+<http://www.semanticweb.org/owl/owlapi/turtle#hasGeolocation> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                              rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Geolocation> ;
+                                                              rdfs:comment "A compound can be found at certain geo locations."@en ;
+                                                              rdfs:label "has geo location"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularDescriptors
+<http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularDescriptors> rdf:type owl:ObjectProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                                       rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                       rdfs:comment "A compound has molecular descriptors."@en ;
+                                                                       rdfs:label "has molecular descriptors"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularFeatures
+<http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularFeatures> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                                    rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> ;
+                                                                    rdfs:comment "A compound has features."@en ;
+                                                                    rdfs:label "has molecular features"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularProperties
+<http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularProperties> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                                      rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                      rdfs:comment "A compound has properties."@en ;
+                                                                      rdfs:label "has molecular properties"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hasTaxonomyData
+<http://www.semanticweb.org/owl/owlapi/turtle#hasTaxonomyData> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                               rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy> ;
+                                                               rdfs:comment "A compound has a taxonomy structure."@en ;
+                                                               rdfs:label "has taxonomy data"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#isIdentifiedBy
+<http://www.semanticweb.org/owl/owlapi/turtle#isIdentifiedBy> rdf:type owl:ObjectProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                              rdfs:range <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                              rdfs:comment "A compound is identified by it's unique identifiers."@en ;
+                                                              rdfs:label "is identified by"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmiles> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "Absolute smiles of a compound."@en ;
+                                                              rdfs:label "absolute smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmilesSources
+<http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmilesSources> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                                     rdfs:range xsd:string ;
+                                                                     rdfs:comment "Source databases of the absolute smiles."@en ;
+                                                                     rdfs:label "absolute smiles sources"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#alogp
+<http://www.semanticweb.org/owl/owlapi/turtle#alogp> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                     rdfs:range xsd:float ;
+                                                     rdfs:comment "Something about octanol-water partition TODO"@en ;
+                                                     rdfs:label "alog p"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#alogp2
+<http://www.semanticweb.org/owl/owlapi/turtle#alogp2> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                      rdfs:range xsd:float ;
+                                                      rdfs:comment "Something about octanol-water partition TODO"@en ;
+                                                      rdfs:label "alog p2"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#amralogp
+<http://www.semanticweb.org/owl/owlapi/turtle#amralogp> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                        rdfs:range xsd:float ;
+                                                        rdfs:comment "AMR—molar refractivity. TODO"@en ;
+                                                        rdfs:label "amr alog p "@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#annotationLevel
+<http://www.semanticweb.org/owl/owlapi/turtle#annotationLevel> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Annotation level of the NP (from 1 to 5)."@en ;
+                                                               rdfs:label "annotation level"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#apol
+<http://www.semanticweb.org/owl/owlapi/turtle#apol> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:comment "Sum of the atomic polarizabilities (including implicit hydrogens)"@en ;
+                                                    rdfs:label "apol"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#aquisitionDate
+<http://www.semanticweb.org/owl/owlapi/turtle#aquisitionDate> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                              rdfs:range xsd:date ;
+                                                              rdfs:comment "The date the compound data was aquired from the source."@en ;
+                                                              rdfs:label "aquisition date"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#baseId
+<http://www.semanticweb.org/owl/owlapi/turtle#baseId> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "Object Id within the coconut database."@en ;
+                                                      rdfs:label "base Id"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#bcutDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#bcutDescriptor> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                              rdfs:range xsd:float ;
+                                                              rdfs:comment "BCUT decriptor (Eigenvalue based). Eigenvalue based descriptor noted for its utility in chemical diversity."@en ;
+                                                              rdfs:label "bcut descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#bondCount
+<http://www.semanticweb.org/owl/owlapi/turtle#bondCount> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> ;
+                                                         rdfs:range xsd:int ;
+                                                         rdfs:comment "Number of bonds within the compound."@en ;
+                                                         rdfs:label "bond count"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#bpol
+<http://www.semanticweb.org/owl/owlapi/turtle#bpol> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:comment "Sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens) with polarizabilities taken from http://www.sunysccc.edu/academic/mst/ptable/p-table2.htm This descriptor assuemes 2-centered bonds."@en ;
+                                                    rdfs:label "bpol"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#cas
+<http://www.semanticweb.org/owl/owlapi/turtle#cas> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:comment "CAS Registry Number."@en ;
+                                                   rdfs:label "cas"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#circularFingerprint
+<http://www.semanticweb.org/owl/owlapi/turtle#circularFingerprint> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                                   rdfs:range xsd:string ;
+                                                                   rdfs:comment "Fingerprint sequence of TODO database."@en ;
+                                                                   rdfs:label "circular fingerprint"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#citationDoi
+<http://www.semanticweb.org/owl/owlapi/turtle#citationDoi> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Citation> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "DOI of publications the compound has been mentioned."@en ;
+                                                           rdfs:label "citation DOI."@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#cleanSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#cleanSmiles> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "Clean Simplified Molecular Input Line Entry Specification."@en ;
+                                                           rdfs:label "clean smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#containsLinearSugars
+<http://www.semanticweb.org/owl/owlapi/turtle#containsLinearSugars> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> ;
+                                                                    rdfs:range xsd:boolean ;
+                                                                    rdfs:comment "Information if there are any linear sugars present in the compound."@en ;
+                                                                    rdfs:label "contains linear sugars"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#containsRingSugars
+<http://www.semanticweb.org/owl/owlapi/turtle#containsRingSugars> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> ;
+                                                                  rdfs:range xsd:boolean ;
+                                                                  rdfs:comment "Information if there are any ring sugars present in the compound."@en ;
+                                                                  rdfs:label "contains ring sugars"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#containsSugar
+<http://www.semanticweb.org/owl/owlapi/turtle#containsSugar> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> ;
+                                                             rdfs:range xsd:boolean ;
+                                                             rdfs:comment "Information if the compound contains sugar."@en ;
+                                                             rdfs:label "contains sugar"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#deepSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#deepSmiles> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Deep Simplified Molecular Input Line Entry Specification."@en ;
+                                                          rdfs:label "deep smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#eccentricConnectivityIndexDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#eccentricConnectivityIndexDescriptor> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                                    rdfs:range xsd:float ;
+                                                                                    rdfs:comment "A topological descriptor combining distance and adjacency information."@en ;
+                                                                                    rdfs:label "eccentric connectivity index descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragments
+<http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragments> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                                       rdfs:range xsd:string ;
+                                                                       rdfs:comment "List of Ertl Functional Groups."@en ;
+                                                                       rdfs:label "ERTL functional fragments"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragmentsPseudoSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragmentsPseudoSmiles> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                                                   rdfs:range xsd:string ;
+                                                                                   rdfs:comment "List of Ertl Functional Groups in pseudo SMILES."@en ;
+                                                                                   rdfs:label "ERTL functional fragments pseudo smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#extendedFingerprint
+<http://www.semanticweb.org/owl/owlapi/turtle#extendedFingerprint> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                                   rdfs:range xsd:string ;
+                                                                   rdfs:comment "Fingerprint sequence of TODO database."@en ;
+                                                                   rdfs:label "extended fingerprint"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fmfDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#fmfDescriptor> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                             rdfs:range xsd:float ;
+                                                             rdfs:comment "FMF descriptor characterizing complexity of a molecule. The descriptor is described in (Yang, Y. et. al.. J. Med. Chem.. 2010. ASAP) and is an approach to characterizing molecular complexity based on the Murcko framework present in the molecule."@en ;
+                                                             rdfs:label "fmf descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#foundInDatabases
+<http://www.semanticweb.org/owl/owlapi/turtle#foundInDatabases> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                                rdfs:range xsd:int ;
+                                                                rdfs:comment "Nametags of databases where the compound can be found."@en ;
+                                                                rdfs:label "found in databases"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fragmentComplexityDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#fragmentComplexityDescriptor> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                            rdfs:range xsd:float ;
+                                                                            rdfs:comment "Class that returns the complexity of a system. The complexity is defined as (Nilakantan, R. et. al.. Journal of chemical information and modeling. 2006. 46)"@en ;
+                                                                            rdfs:label "fragment complexity descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fragments
+<http://www.semanticweb.org/owl/owlapi/turtle#fragments> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar
+<http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#fsp3
+<http://www.semanticweb.org/owl/owlapi/turtle#fsp3> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                    rdfs:range xsd:float ;
+                                                    rdfs:comment "This descriptor is characterizing non-flatness of a molecule"@en ;
+                                                    rdfs:label "fsp3"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#geoLocation
+<http://www.semanticweb.org/owl/owlapi/turtle#geoLocation> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Geolocation> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "Areas where the compound can be found."@en ;
+                                                           rdfs:label "geo location"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#gravitationalIndexHeavyAtoms
+<http://www.semanticweb.org/owl/owlapi/turtle#gravitationalIndexHeavyAtoms> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                            rdfs:range xsd:double ;
+                                                                            rdfs:comment "Gravitational index descriptor (heavy atoms only). Theses are calculated from the 3D molecular structure, which is defined with coordinates of all atoms in the molecule."@en ;
+                                                                            rdfs:label "gravitational index heavy atoms"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hBondAcceptorCount
+<http://www.semanticweb.org/owl/owlapi/turtle#hBondAcceptorCount> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                  rdfs:range xsd:int ;
+                                                                  rdfs:comment "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."@en ;
+                                                                  rdfs:label "hydrogen bond acceptor count"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hBondDonorCount
+<http://www.semanticweb.org/owl/owlapi/turtle#hBondDonorCount> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Donor count is the sum of the atoms in the molecule which have H donor property."@en ;
+                                                               rdfs:label "hydrogen bond donor count"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#heavyAtomNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#heavyAtomNumber> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Number of heavy Atoms."@en ;
+                                                               rdfs:label "heavy atom number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#hybridizationRatioDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#hybridizationRatioDescriptor> rdf:type owl:DatatypeProperty ;
+                                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                            rdfs:range xsd:float ;
+                                                                            rdfs:comment "Hybridization Ratio Descriptor (fraction of sp3 carbons to sp2 carbons)."@en ;
+                                                                            rdfs:label "hybridization ratio descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#idInSource
+<http://www.semanticweb.org/owl/owlapi/turtle#idInSource> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Id the compound had in it's source database."@en ;
+                                                          rdfs:label "id in source"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex1
+<http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex1> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                rdfs:range xsd:float ;
+                                                                rdfs:comment "Classification of the molecular shape of a compound."@en ;
+                                                                rdfs:label "kappa shape index 1"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex2
+<http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex2> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                rdfs:range xsd:float ;
+                                                                rdfs:comment "Classification of the molecular shape of a compound."@en ;
+                                                                rdfs:label "kappa shape index 2"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex3
+<http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex3> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                rdfs:range xsd:float ;
+                                                                rdfs:comment "Classification of the molecular shape of a compound."@en ;
+                                                                rdfs:label "kappa shape index 3"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#lipinskiRuleOf5Failures
+<http://www.semanticweb.org/owl/owlapi/turtle#lipinskiRuleOf5Failures> rdf:type owl:DatatypeProperty ;
+                                                                       rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                       rdfs:range xsd:int ;
+                                                                       rdfs:comment "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."@en ;
+                                                                       rdfs:label "Lipinski rule of 5 failures"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#manholdlogp
+<http://www.semanticweb.org/owl/owlapi/turtle#manholdlogp> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                           rdfs:range xsd:float ;
+                                                           rdfs:comment "LogP descriptor (Mannhold version)."@en ;
+                                                           rdfs:label "manholdlogp"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#maxNumberOfRings
+<http://www.semanticweb.org/owl/owlapi/turtle#maxNumberOfRings> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                rdfs:range xsd:int ;
+                                                                rdfs:comment "Maximum number of rings in the compound."@en ;
+                                                                rdfs:label "maximum number of rings"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#minNumberOfRings
+<http://www.semanticweb.org/owl/owlapi/turtle#minNumberOfRings> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                rdfs:range xsd:int ;
+                                                                rdfs:comment "Minimum number of rings in the compound."@en ;
+                                                                rdfs:label "minimum number of rings"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#molecularFormula
+<http://www.semanticweb.org/owl/owlapi/turtle#molecularFormula> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                                rdfs:range xsd:string ;
+                                                                rdfs:comment "Molecular formula of a compound."@en ;
+                                                                rdfs:label "molecular formula"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#molecularWeight
+<http://www.semanticweb.org/owl/owlapi/turtle#molecularWeight> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                               rdfs:range xsd:float ;
+                                                               rdfs:comment "Molecular weight of a compound."@en ;
+                                                               rdfs:label "molecular weight"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#murkoFramework
+<http://www.semanticweb.org/owl/owlapi/turtle#murkoFramework> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "Molecule string to make it compatible using the Bemis-Murcko framework."@en ;
+                                                              rdfs:label "murcko framework"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#name
+<http://www.semanticweb.org/owl/owlapi/turtle#name> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "Given name of a compound."@en ;
+                                                    rdfs:label "name"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#nameTrustLevel
+<http://www.semanticweb.org/owl/owlapi/turtle#nameTrustLevel> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Class> ;
+                                                              rdfs:range xsd:int ;
+                                                              rdfs:comment "Trust level of given compound name."@en ;
+                                                              rdfs:label "name trust level"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#nplNohScore
+<http://www.semanticweb.org/owl/owlapi/turtle#nplNohScore> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "NP‐likeness score computed on the nitrolic acid molecule."@en ;
+                                                           rdfs:label "NPL-NOH score"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#nplScore
+<http://www.semanticweb.org/owl/owlapi/turtle#nplScore> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                        rdfs:range xsd:float ;
+                                                        rdfs:comment "The likelyhood of the compound to be a natural product, ranges from -5 (less likely) to 5 (very likely)."@en ;
+                                                        rdfs:label "NPL score"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#nplSugarScore
+<http://www.semanticweb.org/owl/owlapi/turtle#nplSugarScore> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                             rdfs:range xsd:float ;
+                                                             rdfs:comment "NP‐likeness score computed on the glycosylated molecule."@en ;
+                                                             rdfs:label "NPL sugar score"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#numberOfCarbons
+<http://www.semanticweb.org/owl/owlapi/turtle#numberOfCarbons> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Number of carbon atoms in the compound."@en ;
+                                                               rdfs:label "number of carbons"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#numberOfNitrogens
+<http://www.semanticweb.org/owl/owlapi/turtle#numberOfNitrogens> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                 rdfs:range xsd:int ;
+                                                                 rdfs:comment "Number of nitrogen atoms in the compound."@en ;
+                                                                 rdfs:label "number of nitrogens"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#numberOfOxygens
+<http://www.semanticweb.org/owl/owlapi/turtle#numberOfOxygens> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Number of oxygen atoms in the compound."@en ;
+                                                               rdfs:label "number of oxygens"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#numberSpiroAtoms
+<http://www.semanticweb.org/owl/owlapi/turtle#numberSpiroAtoms> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                rdfs:range xsd:int ;
+                                                                rdfs:comment "Number of atoms that are common to two rings in the molecule of a compound."@en ;
+                                                                rdfs:label "number of spiro atoms"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#originalInchi
+<http://www.semanticweb.org/owl/owlapi/turtle#originalInchi> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                             rdfs:range xsd:string ;
+                                                             rdfs:comment "Original International Chemical Identifier."@en ;
+                                                             rdfs:label "original inchi"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#originalInchiKey
+<http://www.semanticweb.org/owl/owlapi/turtle#originalInchiKey> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                                rdfs:range xsd:string ;
+                                                                rdfs:comment "Original International Chemical Identifier Key."@en ;
+                                                                rdfs:label "original inchi key"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#originalSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#originalSmiles> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "Original Simplified Molecular Input Line Entry Specification."@en ;
+                                                              rdfs:label "original smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#petitjeanNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#petitjeanNumber> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                               rdfs:range xsd:float ;
+                                                               rdfs:comment "According to the Petitjean definition, the eccentricity of a vertex corresponds to the distance from the vertex to the most remote vertex in the graph. The distance is obtained from the distance matrix as the count of edges between the two vertices."@en ;
+                                                               rdfs:label "petitjean Number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeGeom
+<http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeGeom> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                  rdfs:range xsd:float ;
+                                                                  rdfs:comment "The geometric shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule."@en ;
+                                                                  rdfs:label "petitjean shape geom"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeTopo
+<http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeTopo> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                  rdfs:range xsd:float ;
+                                                                  rdfs:comment "The topological shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule."@en ;
+                                                                  rdfs:label "petitjean shape topo"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#pubchemBits
+<http://www.semanticweb.org/owl/owlapi/turtle#pubchemBits> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "PubChem fingerprint in MongoDB BinData format."@en ;
+                                                           rdfs:label "PubChem bits"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#pubchemBitsString
+<http://www.semanticweb.org/owl/owlapi/turtle#pubchemBitsString> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "PubChem fingerprint in MongoDB BinData format."@en ;
+                                                                 rdfs:label "PubChem bits string"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#pubchemFingerprint
+<http://www.semanticweb.org/owl/owlapi/turtle#pubchemFingerprint> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> ;
+                                                                  rdfs:range xsd:string ;
+                                                                  rdfs:comment "Fingerprint sequence of PubChem database."@en ;
+                                                                  rdfs:label "PubChem fingerprint"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#simpleInchi
+<http://www.semanticweb.org/owl/owlapi/turtle#simpleInchi> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "Simple International Chemical Identifier."@en ;
+                                                           rdfs:label "simple inchi"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#simpleInchiKey
+<http://www.semanticweb.org/owl/owlapi/turtle#simpleInchiKey> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "Simple International Chemical Identifier Key."@en ;
+                                                              rdfs:label "simple inchi key"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#simpleSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#simpleSmiles> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "Simple Simplified Molecular Input Line Entry Specification."@en ;
+                                                            rdfs:label "simple smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#smiles
+<http://www.semanticweb.org/owl/owlapi/turtle#smiles> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "Simplified Molecular Input Line Entry Specification."@en ;
+                                                      rdfs:label "smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#source
+<http://www.semanticweb.org/owl/owlapi/turtle#source> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "Source of the data."@en ;
+                                                      rdfs:label "source"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeHeavyAtomNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeHeavyAtomNumber> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                        rdfs:range xsd:int ;
+                                                                        rdfs:comment "Number of heavy Atoms which are not sugar."@en ;
+                                                                        rdfs:label "sugar free heavy atom number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeSmiles> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "Sugar free Simplified Molecular Input Line Entry Specification."@en ;
+                                                               rdfs:label "sugar free smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeTotalAtomNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeTotalAtomNumber> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                                        rdfs:range xsd:int ;
+                                                                        rdfs:comment "Number of total Atoms which are not sugar."@en ;
+                                                                        rdfs:label "sugar free total atom number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#synonyms
+<http://www.semanticweb.org/owl/owlapi/turtle#synonyms> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Compound> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "Synonyme names of a compound."@en ;
+                                                        rdfs:label "synonyms"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#taxonomyReferenceObjects
+<http://www.semanticweb.org/owl/owlapi/turtle#taxonomyReferenceObjects> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy> ;
+                                                                        rdfs:range xsd:string ;
+                                                                        rdfs:comment "TODO."@en ;
+                                                                        rdfs:label "taxonomy reference objects"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#textTaxa
+<http://www.semanticweb.org/owl/owlapi/turtle#textTaxa> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "TODO."@en ;
+                                                        rdfs:label "text Taxa"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#topoPSA
+<http://www.semanticweb.org/owl/owlapi/turtle#topoPSA> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                       rdfs:range xsd:float ;
+                                                       rdfs:comment "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."@en ;
+                                                       rdfs:label "topo PSA"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#totalAtomNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#totalAtomNumber> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> ;
+                                                               rdfs:range xsd:int ;
+                                                               rdfs:comment "Number of total Atoms."@en ;
+                                                               rdfs:label "total atom number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#tpsaEfficiency
+<http://www.semanticweb.org/owl/owlapi/turtle#tpsaEfficiency> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                              rdfs:range xsd:float ;
+                                                              rdfs:comment "Fractional polar surface area descriptor."@en ;
+                                                              rdfs:label "tpsa efficiency"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#uniqueSmiles
+<http://www.semanticweb.org/owl/owlapi/turtle#uniqueSmiles> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "Unique Simplified Molecular Input Line Entry Specification."@en ;
+                                                            rdfs:label "unique smiles"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#vabcDescriptor
+<http://www.semanticweb.org/owl/owlapi/turtle#vabcDescriptor> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                              rdfs:range xsd:double ;
+                                                              rdfs:comment "Volume descriptor"@en ;
+                                                              rdfs:label "vabc descriptor"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#vertexAdjMagnitude
+<http://www.semanticweb.org/owl/owlapi/turtle#vertexAdjMagnitude> rdf:type owl:DatatypeProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> ;
+                                                                  rdfs:range xsd:float ;
+                                                                  rdfs:comment "Vertex adjacency information TODO"@en ;
+                                                                  rdfs:label "vertex Adj Magnitude"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#wienerPathNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#wienerPathNumber> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                rdfs:range xsd:float ;
+                                                                rdfs:comment "Dataset has it as weiner, but it's from a Prof. Wiener TODO."@en ;
+                                                                rdfs:label "wiener path number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#wienerPolarityNumber
+<http://www.semanticweb.org/owl/owlapi/turtle#wienerPolarityNumber> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                                    rdfs:range xsd:float ;
+                                                                    rdfs:comment "Dataset has it as weiner, but it's from a Prof. Wiener TODO."@en ;
+                                                                    rdfs:label "wiener polarity number"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#xRefs
+<http://www.semanticweb.org/owl/owlapi/turtle#xRefs> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> ;
+                                                     rdfs:range xsd:int ;
+                                                     rdfs:comment "Crossreferences to the sources where the compound can be found."@en ;
+                                                     rdfs:label "cross references"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#xlogp
+<http://www.semanticweb.org/owl/owlapi/turtle#xlogp> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                     rdfs:range xsd:float ;
+                                                     rdfs:comment "Prediction of logP based on the atom-type method calld XlogP. Requires all hydrogens to be explicit."@en ;
+                                                     rdfs:label "x log p"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#zagrebIndex
+<http://www.semanticweb.org/owl/owlapi/turtle#zagrebIndex> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> ;
+                                                           rdfs:range xsd:float ;
+                                                           rdfs:comment "The sum of the squares of atom degree over all heavy atoms i."@en ;
+                                                           rdfs:label "zagreb index"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData
+<http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData> rdf:type owl:Class ;
+                                                            rdfs:comment "The analytic data of a compound"@en ;
+                                                            rdfs:label "Analytic data"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Citation
+<http://www.semanticweb.org/owl/owlapi/turtle#Citation> rdf:type owl:Class ;
+                                                        rdfs:comment "The compound was mentioned in a article, book or document with a DOI"@en ;
+                                                        rdfs:label "Citation"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Class
+<http://www.semanticweb.org/owl/owlapi/turtle#Class> rdf:type owl:Class ;
+                                                     rdfs:comment "values currently not used but present in the data TODO"@en ;
+                                                     rdfs:label "Unknown"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Compound
+<http://www.semanticweb.org/owl/owlapi/turtle#Compound> rdf:type owl:Class ;
+                                                        rdfs:comment "A molecular compound"@en ;
+                                                        rdfs:label "Compound"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource
+<http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource> rdf:type owl:Class ;
+                                                                rdfs:comment "The origin of a compounds data"@en ;
+                                                                rdfs:label "Data origin source"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint
+<http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint> rdf:type owl:Class ;
+                                                           rdfs:comment "Fingerprint and bitstrings of a chemical compound"@en ;
+                                                           rdfs:label "Fingerprint"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Geolocation
+<http://www.semanticweb.org/owl/owlapi/turtle#Geolocation> rdf:type owl:Class ;
+                                                           rdfs:comment "Geolocation where a compound can be found"@en ;
+                                                           rdfs:label "Geolocation"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors
+<http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors> rdf:type owl:Class ;
+                                                                    rdfs:comment "Descriptors of the molecule"@en ;
+                                                                    rdfs:label "Molecular Descriptors"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures
+<http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures> rdf:type owl:Class ;
+                                                                 rdfs:comment "Molecular features of a compound"@en ;
+                                                                 rdfs:label "Molecular features"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties
+<http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties> rdf:type owl:Class ;
+                                                                   rdfs:comment "Molecular properties of a compound"@en ;
+                                                                   rdfs:label "Molecular properties"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy
+<http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy> rdf:type owl:Class ;
+                                                        rdfs:comment "TODO Work in progress, data is shit here"@en ;
+                                                        rdfs:label "Taxonomy"@en .
+
+
+###  http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers
+<http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers> rdf:type owl:Class ;
+                                                                 rdfs:comment "Unique identifiers of a molecular compound like smiles, inchikeys"@en ;
+                                                                 rdfs:label "Unique Identifiers"@en .
+
+
+###  http://www.w3.org/2001/XMLSchema#String
+xsd:String rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://www.semanticweb.org/owl/owlapi/turtle#fragments> rdfs:comment "List of circular fragments (molecular signatures) of the deglycosylated NP."@en ;
+                                                         rdfs:label "fragments"@en .
+
+
+<http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar> rdfs:comment "List of circular fragments (molecular signatures) of the whole NP."@en ;
+                                                                  rdfs:label "fragments with Sugar"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
