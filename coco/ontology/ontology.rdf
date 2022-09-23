@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://coconut-kg.io/ontology#"
-     xml:base="http://coconut-kg.io/ontology"
+<rdf:RDF xmlns="http://coconut-kg.aksw.org/ontology#"
+     xml:base="http://coconut-kg.aksw.org/ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,13 +8,16 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://coconut-kg.io/ontology#">
+    <owl:Ontology rdf:about="http://coconut-kg.aksw.org/ontology#">
         <terms:creator>Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy</terms:creator>
-        <terms:description>Coconut base ontology</terms:description>
-        <terms:title xml:lang="en">Coconut knowledge graph</terms:title>
+        <terms:description xml:lang="en">The Coconut Ontology contains the data model of Coconut Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.</terms:description>
+        <terms:rights xml:lang="en">Copyright © 2022 ChemNet</terms:rights>
+        <terms:title xml:lang="en">coco: The data model for Coconut Knowledge Graph</terms:title>
         <vann:preferredNamespacePrefix>coco</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://coconut-kg.io/ontology#</vann:preferredNamespaceUri>
-        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+        <vann:preferredNamespaceUri>http://coconut-kg.aksw.org/ontology#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">The Coconut Ontology contains the data model of Coconut Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.</rdfs:comment>
+        <rdfs:label xml:lang="en">coco: The data model for Coconut Knowledge Graph</rdfs:label>
+        <owl:versionInfo>SNAPSHOT</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -42,6 +45,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
     
 
 
@@ -97,140 +107,140 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#dataOriginatedFrom -->
+    <!-- http://coconut-kg.aksw.org/ontology#dataOriginatedFrom -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#dataOriginatedFrom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#dataOriginatedFrom">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:comment xml:lang="en">A compounds data has been taken from a origin source.</rdfs:comment>
         <rdfs:label xml:lang="en">data originated from</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fragments -->
+    <!-- http://coconut-kg.aksw.org/ontology#fragments -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragments">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#fragments">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar -->
+    <!-- http://coconut-kg.aksw.org/ontology#fragmentsWithSugar -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#fragmentsWithSugar">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasAnalyticData -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasAnalyticData -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasAnalyticData">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasAnalyticData">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:comment xml:lang="en">A compound has collected analytic data of it.</rdfs:comment>
         <rdfs:label xml:lang="en">has analytic data</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasCitation -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasCitation -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasCitation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Citation"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasCitation">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#Citation"/>
         <rdfs:comment xml:lang="en">A compound was cited in a document identifiyable by a DOI.</rdfs:comment>
         <rdfs:label xml:lang="en">has citation</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasFingerprint -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasFingerprint -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasFingerprint">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasFingerprint">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:comment xml:lang="en">A compound has a specific fingerprints.</rdfs:comment>
         <rdfs:label xml:lang="en">has fingerprint</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasGeolocation -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasGeolocation -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasGeolocation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Geolocation"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasGeolocation">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#Geolocation"/>
         <rdfs:comment xml:lang="en">A compound can be found at certain geo locations.</rdfs:comment>
         <rdfs:label xml:lang="en">has geo location</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularDescriptors -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasMolecularDescriptors -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularDescriptors">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasMolecularDescriptors">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:comment xml:lang="en">A compound has molecular descriptors.</rdfs:comment>
         <rdfs:label xml:lang="en">has molecular descriptors</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularFeatures -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasMolecularFeatures -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularFeatures">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasMolecularFeatures">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularFeatures"/>
         <rdfs:comment xml:lang="en">A compound has features.</rdfs:comment>
         <rdfs:label xml:lang="en">has molecular features</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularProperties -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasMolecularProperties -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasMolecularProperties">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasMolecularProperties">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:comment xml:lang="en">A compound has properties.</rdfs:comment>
         <rdfs:label xml:lang="en">has molecular properties</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hasTaxonomyData -->
+    <!-- http://coconut-kg.aksw.org/ontology#hasTaxonomyData -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hasTaxonomyData">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#hasTaxonomyData">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#Taxonomy"/>
         <rdfs:comment xml:lang="en">A compound has a taxonomy structure.</rdfs:comment>
         <rdfs:label xml:lang="en">has taxonomy data</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#isIdentifiedBy -->
+    <!-- http://coconut-kg.aksw.org/ontology#isIdentifiedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#isIdentifiedBy">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:ObjectProperty rdf:about="http://coconut-kg.aksw.org/ontology#isIdentifiedBy">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:comment xml:lang="en">A compound is identified by it&apos;s unique identifiers.</rdfs:comment>
         <rdfs:label xml:lang="en">is identified by</rdfs:label>
     </owl:ObjectProperty>
@@ -249,11 +259,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#absoluteSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#absoluteSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Absolute smiles of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">absolute smiles</rdfs:label>
@@ -261,11 +271,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmilesSources -->
+    <!-- http://coconut-kg.aksw.org/ontology#absoluteSmilesSources -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#absoluteSmilesSources">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#absoluteSmilesSources">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Source databases of the absolute smiles.</rdfs:comment>
         <rdfs:label xml:lang="en">absolute smiles sources</rdfs:label>
@@ -273,11 +283,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#alogp -->
+    <!-- http://coconut-kg.aksw.org/ontology#alogp -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#alogp">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#alogp">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Something about octanol-water partition TODO</rdfs:comment>
         <rdfs:label xml:lang="en">alog p</rdfs:label>
@@ -285,11 +295,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#alogp2 -->
+    <!-- http://coconut-kg.aksw.org/ontology#alogp2 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#alogp2">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#alogp2">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Something about octanol-water partition TODO</rdfs:comment>
         <rdfs:label xml:lang="en">alog p2</rdfs:label>
@@ -297,11 +307,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#amralogp -->
+    <!-- http://coconut-kg.aksw.org/ontology#amralogp -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#amralogp">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#amralogp">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">AMR—molar refractivity. TODO</rdfs:comment>
         <rdfs:label xml:lang="en">amr alog p </rdfs:label>
@@ -309,11 +319,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#annotationLevel -->
+    <!-- http://coconut-kg.aksw.org/ontology#annotationLevel -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#annotationLevel">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#annotationLevel">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Annotation level of the NP (from 1 to 5).</rdfs:comment>
         <rdfs:label xml:lang="en">annotation level</rdfs:label>
@@ -321,11 +331,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#apol -->
+    <!-- http://coconut-kg.aksw.org/ontology#apol -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#apol">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#apol">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Sum of the atomic polarizabilities (including implicit hydrogens)</rdfs:comment>
         <rdfs:label xml:lang="en">apol</rdfs:label>
@@ -333,11 +343,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#aquisitionDate -->
+    <!-- http://coconut-kg.aksw.org/ontology#aquisitionDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#aquisitionDate">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#aquisitionDate">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">The date the compound data was aquired from the source.</rdfs:comment>
         <rdfs:label xml:lang="en">aquisition date</rdfs:label>
@@ -345,11 +355,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#baseId -->
+    <!-- http://coconut-kg.aksw.org/ontology#baseId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#baseId">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#baseId">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Object Id within the coconut database.</rdfs:comment>
         <rdfs:label xml:lang="en">base Id</rdfs:label>
@@ -357,11 +367,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#bcutDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#bcutDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#bcutDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#bcutDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">BCUT decriptor (Eigenvalue based). Eigenvalue based descriptor noted for its utility in chemical diversity.</rdfs:comment>
         <rdfs:label xml:lang="en">bcut descriptor</rdfs:label>
@@ -369,11 +379,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#bondCount -->
+    <!-- http://coconut-kg.aksw.org/ontology#bondCount -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#bondCount">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#bondCount">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularFeatures"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of bonds within the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">bond count</rdfs:label>
@@ -381,11 +391,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#bpol -->
+    <!-- http://coconut-kg.aksw.org/ontology#bpol -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#bpol">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#bpol">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Sum of the absolute value of the difference between atomic polarizabilities of all bonded atoms in the molecule (including implicit hydrogens) with polarizabilities taken from http://www.sunysccc.edu/academic/mst/ptable/p-table2.htm This descriptor assuemes 2-centered bonds.</rdfs:comment>
         <rdfs:label xml:lang="en">bpol</rdfs:label>
@@ -393,11 +403,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#cas -->
+    <!-- http://coconut-kg.aksw.org/ontology#cas -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#cas">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#cas">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">CAS Registry Number.</rdfs:comment>
         <rdfs:label xml:lang="en">cas</rdfs:label>
@@ -405,11 +415,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#circularFingerprint -->
+    <!-- http://coconut-kg.aksw.org/ontology#circularFingerprint -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#circularFingerprint">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#circularFingerprint">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Fingerprint sequence of TODO database.</rdfs:comment>
         <rdfs:label xml:lang="en">circular fingerprint</rdfs:label>
@@ -417,11 +427,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#citationDoi -->
+    <!-- http://coconut-kg.aksw.org/ontology#citationDoi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#citationDoi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Citation"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#citationDoi">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Citation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">DOI of publications the compound has been mentioned.</rdfs:comment>
         <rdfs:label xml:lang="en">citation DOI.</rdfs:label>
@@ -429,11 +439,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#cleanSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#cleanSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#cleanSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#cleanSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Clean Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">clean smiles</rdfs:label>
@@ -441,11 +451,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#containsLinearSugars -->
+    <!-- http://coconut-kg.aksw.org/ontology#containsLinearSugars -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#containsLinearSugars">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#containsLinearSugars">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularFeatures"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Information if there are any linear sugars present in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">contains linear sugars</rdfs:label>
@@ -453,11 +463,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#containsRingSugars -->
+    <!-- http://coconut-kg.aksw.org/ontology#containsRingSugars -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#containsRingSugars">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#containsRingSugars">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularFeatures"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Information if there are any ring sugars present in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">contains ring sugars</rdfs:label>
@@ -465,11 +475,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#containsSugar -->
+    <!-- http://coconut-kg.aksw.org/ontology#containsSugar -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#containsSugar">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#containsSugar">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularFeatures"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Information if the compound contains sugar.</rdfs:comment>
         <rdfs:label xml:lang="en">contains sugar</rdfs:label>
@@ -477,11 +487,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#deepSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#deepSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#deepSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#deepSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Deep Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">deep smiles</rdfs:label>
@@ -489,11 +499,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#eccentricConnectivityIndexDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#eccentricConnectivityIndexDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#eccentricConnectivityIndexDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#eccentricConnectivityIndexDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">A topological descriptor combining distance and adjacency information.</rdfs:comment>
         <rdfs:label xml:lang="en">eccentric connectivity index descriptor</rdfs:label>
@@ -501,11 +511,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragments -->
+    <!-- http://coconut-kg.aksw.org/ontology#ertlFunctionalFragments -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragments">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#ertlFunctionalFragments">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">List of Ertl Functional Groups.</rdfs:comment>
         <rdfs:label xml:lang="en">ERTL functional fragments</rdfs:label>
@@ -513,11 +523,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragmentsPseudoSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#ertlFunctionalFragmentsPseudoSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#ertlFunctionalFragmentsPseudoSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#ertlFunctionalFragmentsPseudoSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">List of Ertl Functional Groups in pseudo SMILES.</rdfs:comment>
         <rdfs:label xml:lang="en">ERTL functional fragments pseudo smiles</rdfs:label>
@@ -525,11 +535,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#extendedFingerprint -->
+    <!-- http://coconut-kg.aksw.org/ontology#extendedFingerprint -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#extendedFingerprint">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#extendedFingerprint">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Fingerprint sequence of TODO database.</rdfs:comment>
         <rdfs:label xml:lang="en">extended fingerprint</rdfs:label>
@@ -537,11 +547,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fmfDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#fmfDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fmfDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#fmfDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">FMF descriptor characterizing complexity of a molecule. The descriptor is described in (Yang, Y. et. al.. J. Med. Chem.. 2010. ASAP) and is an approach to characterizing molecular complexity based on the Murcko framework present in the molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">fmf descriptor</rdfs:label>
@@ -549,11 +559,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#foundInDatabases -->
+    <!-- http://coconut-kg.aksw.org/ontology#foundInDatabases -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#foundInDatabases">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#foundInDatabases">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Nametags of databases where the compound can be found.</rdfs:comment>
         <rdfs:label xml:lang="en">found in databases</rdfs:label>
@@ -561,11 +571,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fragmentComplexityDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#fragmentComplexityDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragmentComplexityDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#fragmentComplexityDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Class that returns the complexity of a system. The complexity is defined as (Nilakantan, R. et. al.. Journal of chemical information and modeling. 2006. 46)</rdfs:comment>
         <rdfs:label xml:lang="en">fragment complexity descriptor</rdfs:label>
@@ -573,25 +583,25 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fragments -->
+    <!-- http://coconut-kg.aksw.org/ontology#fragments -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragments"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#fragments"/>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar -->
+    <!-- http://coconut-kg.aksw.org/ontology#fragmentsWithSugar -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#fragmentsWithSugar"/>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#fsp3 -->
+    <!-- http://coconut-kg.aksw.org/ontology#fsp3 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fsp3">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#fsp3">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">This descriptor is characterizing non-flatness of a molecule</rdfs:comment>
         <rdfs:label xml:lang="en">fsp3</rdfs:label>
@@ -599,11 +609,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#geoLocation -->
+    <!-- http://coconut-kg.aksw.org/ontology#geoLocation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#geoLocation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Geolocation"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#geoLocation">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Geolocation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Areas where the compound can be found.</rdfs:comment>
         <rdfs:label xml:lang="en">geo location</rdfs:label>
@@ -611,11 +621,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#gravitationalIndexHeavyAtoms -->
+    <!-- http://coconut-kg.aksw.org/ontology#gravitationalIndexHeavyAtoms -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#gravitationalIndexHeavyAtoms">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#gravitationalIndexHeavyAtoms">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="en">Gravitational index descriptor (heavy atoms only). Theses are calculated from the 3D molecular structure, which is defined with coordinates of all atoms in the molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">gravitational index heavy atoms</rdfs:label>
@@ -623,11 +633,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hBondAcceptorCount -->
+    <!-- http://coconut-kg.aksw.org/ontology#hBondAcceptorCount -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hBondAcceptorCount">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#hBondAcceptorCount">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond.</rdfs:comment>
         <rdfs:label xml:lang="en">hydrogen bond acceptor count</rdfs:label>
@@ -635,11 +645,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hBondDonorCount -->
+    <!-- http://coconut-kg.aksw.org/ontology#hBondDonorCount -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hBondDonorCount">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#hBondDonorCount">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Donor count is the sum of the atoms in the molecule which have H donor property.</rdfs:comment>
         <rdfs:label xml:lang="en">hydrogen bond donor count</rdfs:label>
@@ -647,11 +657,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#heavyAtomNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#heavyAtomNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#heavyAtomNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#heavyAtomNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of heavy Atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">heavy atom number</rdfs:label>
@@ -659,11 +669,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#hybridizationRatioDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#hybridizationRatioDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#hybridizationRatioDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#hybridizationRatioDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Hybridization Ratio Descriptor (fraction of sp3 carbons to sp2 carbons).</rdfs:comment>
         <rdfs:label xml:lang="en">hybridization ratio descriptor</rdfs:label>
@@ -671,11 +681,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#idInSource -->
+    <!-- http://coconut-kg.aksw.org/ontology#idInSource -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#idInSource">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#idInSource">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Id the compound had in it&apos;s source database.</rdfs:comment>
         <rdfs:label xml:lang="en">id in source</rdfs:label>
@@ -683,11 +693,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex1 -->
+    <!-- http://coconut-kg.aksw.org/ontology#kappaShapeIndex1 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex1">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#kappaShapeIndex1">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Classification of the molecular shape of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">kappa shape index 1</rdfs:label>
@@ -695,11 +705,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex2 -->
+    <!-- http://coconut-kg.aksw.org/ontology#kappaShapeIndex2 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex2">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#kappaShapeIndex2">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Classification of the molecular shape of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">kappa shape index 2</rdfs:label>
@@ -707,11 +717,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex3 -->
+    <!-- http://coconut-kg.aksw.org/ontology#kappaShapeIndex3 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#kappaShapeIndex3">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#kappaShapeIndex3">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Classification of the molecular shape of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">kappa shape index 3</rdfs:label>
@@ -719,11 +729,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#lipinskiRuleOf5Failures -->
+    <!-- http://coconut-kg.aksw.org/ontology#lipinskiRuleOf5Failures -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#lipinskiRuleOf5Failures">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#lipinskiRuleOf5Failures">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Lipinski rule of 5 failures</rdfs:label>
@@ -731,11 +741,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#manholdlogp -->
+    <!-- http://coconut-kg.aksw.org/ontology#manholdlogp -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#manholdlogp">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#manholdlogp">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">LogP descriptor (Mannhold version).</rdfs:comment>
         <rdfs:label xml:lang="en">manholdlogp</rdfs:label>
@@ -743,11 +753,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#maxNumberOfRings -->
+    <!-- http://coconut-kg.aksw.org/ontology#maxNumberOfRings -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#maxNumberOfRings">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#maxNumberOfRings">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Maximum number of rings in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">maximum number of rings</rdfs:label>
@@ -755,11 +765,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#minNumberOfRings -->
+    <!-- http://coconut-kg.aksw.org/ontology#minNumberOfRings -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#minNumberOfRings">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#minNumberOfRings">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Minimum number of rings in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">minimum number of rings</rdfs:label>
@@ -767,11 +777,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#molecularFormula -->
+    <!-- http://coconut-kg.aksw.org/ontology#molecularFormula -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#molecularFormula">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#molecularFormula">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Molecular formula of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">molecular formula</rdfs:label>
@@ -779,11 +789,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#molecularWeight -->
+    <!-- http://coconut-kg.aksw.org/ontology#molecularWeight -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#molecularWeight">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#molecularWeight">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Molecular weight of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">molecular weight</rdfs:label>
@@ -791,11 +801,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#murkoFramework -->
+    <!-- http://coconut-kg.aksw.org/ontology#murkoFramework -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#murkoFramework">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#murkoFramework">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Molecule string to make it compatible using the Bemis-Murcko framework.</rdfs:comment>
         <rdfs:label xml:lang="en">murcko framework</rdfs:label>
@@ -803,11 +813,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#name -->
+    <!-- http://coconut-kg.aksw.org/ontology#name -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#name">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Given name of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
@@ -815,11 +825,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#nameTrustLevel -->
+    <!-- http://coconut-kg.aksw.org/ontology#nameTrustLevel -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#nameTrustLevel">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Class"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#nameTrustLevel">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Class"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Trust level of given compound name.</rdfs:comment>
         <rdfs:label xml:lang="en">name trust level</rdfs:label>
@@ -827,11 +837,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#nplNohScore -->
+    <!-- http://coconut-kg.aksw.org/ontology#nplNohScore -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#nplNohScore">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#nplNohScore">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">NP‐likeness score computed on the nitrolic acid molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">NPL-NOH score</rdfs:label>
@@ -839,11 +849,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#nplScore -->
+    <!-- http://coconut-kg.aksw.org/ontology#nplScore -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#nplScore">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#nplScore">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The likelyhood of the compound to be a natural product, ranges from -5 (less likely) to 5 (very likely).</rdfs:comment>
         <rdfs:label xml:lang="en">NPL score</rdfs:label>
@@ -851,11 +861,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#nplSugarScore -->
+    <!-- http://coconut-kg.aksw.org/ontology#nplSugarScore -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#nplSugarScore">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#nplSugarScore">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">NP‐likeness score computed on the glycosylated molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">NPL sugar score</rdfs:label>
@@ -863,11 +873,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#numberOfCarbons -->
+    <!-- http://coconut-kg.aksw.org/ontology#numberOfCarbons -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#numberOfCarbons">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#numberOfCarbons">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of carbon atoms in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">number of carbons</rdfs:label>
@@ -875,11 +885,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#numberOfNitrogens -->
+    <!-- http://coconut-kg.aksw.org/ontology#numberOfNitrogens -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#numberOfNitrogens">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#numberOfNitrogens">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of nitrogen atoms in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">number of nitrogens</rdfs:label>
@@ -887,11 +897,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#numberOfOxygens -->
+    <!-- http://coconut-kg.aksw.org/ontology#numberOfOxygens -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#numberOfOxygens">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#numberOfOxygens">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of oxygen atoms in the compound.</rdfs:comment>
         <rdfs:label xml:lang="en">number of oxygens</rdfs:label>
@@ -899,11 +909,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#numberSpiroAtoms -->
+    <!-- http://coconut-kg.aksw.org/ontology#numberSpiroAtoms -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#numberSpiroAtoms">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#numberSpiroAtoms">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of atoms that are common to two rings in the molecule of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">number of spiro atoms</rdfs:label>
@@ -911,11 +921,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#originalInchi -->
+    <!-- http://coconut-kg.aksw.org/ontology#originalInchi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#originalInchi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#originalInchi">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Original International Chemical Identifier.</rdfs:comment>
         <rdfs:label xml:lang="en">original inchi</rdfs:label>
@@ -923,11 +933,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#originalInchiKey -->
+    <!-- http://coconut-kg.aksw.org/ontology#originalInchiKey -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#originalInchiKey">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#originalInchiKey">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Original International Chemical Identifier Key.</rdfs:comment>
         <rdfs:label xml:lang="en">original inchi key</rdfs:label>
@@ -935,11 +945,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#originalSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#originalSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#originalSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#originalSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Original Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">original smiles</rdfs:label>
@@ -947,11 +957,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#petitjeanNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#petitjeanNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#petitjeanNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#petitjeanNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">According to the Petitjean definition, the eccentricity of a vertex corresponds to the distance from the vertex to the most remote vertex in the graph. The distance is obtained from the distance matrix as the count of edges between the two vertices.</rdfs:comment>
         <rdfs:label xml:lang="en">petitjean Number</rdfs:label>
@@ -959,11 +969,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeGeom -->
+    <!-- http://coconut-kg.aksw.org/ontology#petitjeanShapeGeom -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeGeom">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#petitjeanShapeGeom">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The geometric shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">petitjean shape geom</rdfs:label>
@@ -971,11 +981,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeTopo -->
+    <!-- http://coconut-kg.aksw.org/ontology#petitjeanShapeTopo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#petitjeanShapeTopo">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#petitjeanShapeTopo">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The topological shape index described Petitjean and Bath et al. respectively. It measures the anisotropy in a molecule.</rdfs:comment>
         <rdfs:label xml:lang="en">petitjean shape topo</rdfs:label>
@@ -983,11 +993,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#pubchemBits -->
+    <!-- http://coconut-kg.aksw.org/ontology#pubchemBits -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#pubchemBits">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#pubchemBits">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">PubChem fingerprint in MongoDB BinData format.</rdfs:comment>
         <rdfs:label xml:lang="en">PubChem bits</rdfs:label>
@@ -995,11 +1005,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#pubchemBitsString -->
+    <!-- http://coconut-kg.aksw.org/ontology#pubchemBitsString -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#pubchemBitsString">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#pubchemBitsString">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">PubChem fingerprint in MongoDB BinData format.</rdfs:comment>
         <rdfs:label xml:lang="en">PubChem bits string</rdfs:label>
@@ -1007,11 +1017,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#pubchemFingerprint -->
+    <!-- http://coconut-kg.aksw.org/ontology#pubchemFingerprint -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#pubchemFingerprint">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#pubchemFingerprint">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Fingerprint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Fingerprint sequence of PubChem database.</rdfs:comment>
         <rdfs:label xml:lang="en">PubChem fingerprint</rdfs:label>
@@ -1019,11 +1029,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#simpleInchi -->
+    <!-- http://coconut-kg.aksw.org/ontology#simpleInchi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#simpleInchi">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#simpleInchi">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Simple International Chemical Identifier.</rdfs:comment>
         <rdfs:label xml:lang="en">simple inchi</rdfs:label>
@@ -1031,11 +1041,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#simpleInchiKey -->
+    <!-- http://coconut-kg.aksw.org/ontology#simpleInchiKey -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#simpleInchiKey">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#simpleInchiKey">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Simple International Chemical Identifier Key.</rdfs:comment>
         <rdfs:label xml:lang="en">simple inchi key</rdfs:label>
@@ -1043,11 +1053,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#simpleSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#simpleSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#simpleSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#simpleSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Simple Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">simple smiles</rdfs:label>
@@ -1055,11 +1065,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#smiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#smiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#smiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#smiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">smiles</rdfs:label>
@@ -1067,11 +1077,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#source -->
+    <!-- http://coconut-kg.aksw.org/ontology#source -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#source">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#source">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Source of the data.</rdfs:comment>
         <rdfs:label xml:lang="en">source</rdfs:label>
@@ -1079,11 +1089,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeHeavyAtomNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#sugarFreeHeavyAtomNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeHeavyAtomNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#sugarFreeHeavyAtomNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of heavy Atoms which are not sugar.</rdfs:comment>
         <rdfs:label xml:lang="en">sugar free heavy atom number</rdfs:label>
@@ -1091,11 +1101,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#sugarFreeSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#sugarFreeSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Sugar free Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">sugar free smiles</rdfs:label>
@@ -1103,11 +1113,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeTotalAtomNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#sugarFreeTotalAtomNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#sugarFreeTotalAtomNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#sugarFreeTotalAtomNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of total Atoms which are not sugar.</rdfs:comment>
         <rdfs:label xml:lang="en">sugar free total atom number</rdfs:label>
@@ -1115,11 +1125,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#synonyms -->
+    <!-- http://coconut-kg.aksw.org/ontology#synonyms -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#synonyms">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Compound"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#synonyms">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Synonyme names of a compound.</rdfs:comment>
         <rdfs:label xml:lang="en">synonyms</rdfs:label>
@@ -1127,11 +1137,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#taxonomyReferenceObjects -->
+    <!-- http://coconut-kg.aksw.org/ontology#taxonomyReferenceObjects -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#taxonomyReferenceObjects">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#taxonomyReferenceObjects">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">taxonomy reference objects</rdfs:label>
@@ -1139,11 +1149,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#textTaxa -->
+    <!-- http://coconut-kg.aksw.org/ontology#textTaxa -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#textTaxa">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#textTaxa">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">text Taxa</rdfs:label>
@@ -1151,11 +1161,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#topoPSA -->
+    <!-- http://coconut-kg.aksw.org/ontology#topoPSA -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#topoPSA">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#topoPSA">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43).</rdfs:comment>
         <rdfs:label xml:lang="en">topo PSA</rdfs:label>
@@ -1163,11 +1173,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#totalAtomNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#totalAtomNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#totalAtomNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#totalAtomNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularProperties"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of total Atoms.</rdfs:comment>
         <rdfs:label xml:lang="en">total atom number</rdfs:label>
@@ -1175,11 +1185,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#tpsaEfficiency -->
+    <!-- http://coconut-kg.aksw.org/ontology#tpsaEfficiency -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#tpsaEfficiency">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#tpsaEfficiency">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Fractional polar surface area descriptor.</rdfs:comment>
         <rdfs:label xml:lang="en">tpsa efficiency</rdfs:label>
@@ -1187,11 +1197,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#uniqueSmiles -->
+    <!-- http://coconut-kg.aksw.org/ontology#uniqueSmiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#uniqueSmiles">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#uniqueSmiles">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Unique Simplified Molecular Input Line Entry Specification.</rdfs:comment>
         <rdfs:label xml:lang="en">unique smiles</rdfs:label>
@@ -1199,11 +1209,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#vabcDescriptor -->
+    <!-- http://coconut-kg.aksw.org/ontology#vabcDescriptor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#vabcDescriptor">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#vabcDescriptor">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
         <rdfs:comment xml:lang="en">Volume descriptor</rdfs:comment>
         <rdfs:label xml:lang="en">vabc descriptor</rdfs:label>
@@ -1211,11 +1221,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#vertexAdjMagnitude -->
+    <!-- http://coconut-kg.aksw.org/ontology#vertexAdjMagnitude -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#vertexAdjMagnitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#vertexAdjMagnitude">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#AnalyticData"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Vertex adjacency information TODO</rdfs:comment>
         <rdfs:label xml:lang="en">vertex Adj Magnitude</rdfs:label>
@@ -1223,11 +1233,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#wienerPathNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#wienerPathNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#wienerPathNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#wienerPathNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Dataset has it as weiner, but it&apos;s from a Prof. Wiener TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">wiener path number</rdfs:label>
@@ -1235,11 +1245,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#wienerPolarityNumber -->
+    <!-- http://coconut-kg.aksw.org/ontology#wienerPolarityNumber -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#wienerPolarityNumber">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#wienerPolarityNumber">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Dataset has it as weiner, but it&apos;s from a Prof. Wiener TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">wiener polarity number</rdfs:label>
@@ -1247,11 +1257,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#xRefs -->
+    <!-- http://coconut-kg.aksw.org/ontology#xRefs -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#xRefs">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#xRefs">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#DataOriginSource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Crossreferences to the sources where the compound can be found.</rdfs:comment>
         <rdfs:label xml:lang="en">cross references</rdfs:label>
@@ -1259,11 +1269,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#xlogp -->
+    <!-- http://coconut-kg.aksw.org/ontology#xlogp -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#xlogp">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#xlogp">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Prediction of logP based on the atom-type method calld XlogP. Requires all hydrogens to be explicit.</rdfs:comment>
         <rdfs:label xml:lang="en">x log p</rdfs:label>
@@ -1271,11 +1281,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#zagrebIndex -->
+    <!-- http://coconut-kg.aksw.org/ontology#zagrebIndex -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#zagrebIndex">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://coconut-kg.aksw.org/ontology#zagrebIndex">
+        <rdfs:domain rdf:resource="http://coconut-kg.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">The sum of the squares of atom degree over all heavy atoms i.</rdfs:comment>
         <rdfs:label xml:lang="en">zagreb index</rdfs:label>
@@ -1295,123 +1305,130 @@
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData -->
+    <!-- http://coconut-kg.aksw.org/ontology#AnalyticData -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#AnalyticData">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#AnalyticData">
         <rdfs:comment xml:lang="en">The analytic data of a compound</rdfs:comment>
         <rdfs:label xml:lang="en">Analytic data</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Citation -->
+    <!-- http://coconut-kg.aksw.org/ontology#Citation -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Citation">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Citation">
         <rdfs:comment xml:lang="en">The compound was mentioned in a article, book or document with a DOI</rdfs:comment>
         <rdfs:label xml:lang="en">Citation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Class -->
+    <!-- http://coconut-kg.aksw.org/ontology#Class -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Class">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Class">
         <rdfs:comment xml:lang="en">values currently not used but present in the data TODO</rdfs:comment>
         <rdfs:label xml:lang="en">Unknown</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Compound -->
+    <!-- http://coconut-kg.aksw.org/ontology#Compound -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Compound">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Compound">
         <rdfs:comment xml:lang="en">A molecular compound</rdfs:comment>
         <rdfs:label xml:lang="en">Compound</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource -->
+    <!-- http://coconut-kg.aksw.org/ontology#DataOriginSource -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#DataOriginSource">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#DataOriginSource">
         <rdfs:comment xml:lang="en">The origin of a compounds data</rdfs:comment>
         <rdfs:label xml:lang="en">Data origin source</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint -->
+    <!-- http://coconut-kg.aksw.org/ontology#Fingerprint -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Fingerprint">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Fingerprint">
         <rdfs:comment xml:lang="en">Fingerprint and bitstrings of a chemical compound</rdfs:comment>
         <rdfs:label xml:lang="en">Fingerprint</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Geolocation -->
+    <!-- http://coconut-kg.aksw.org/ontology#Geolocation -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Geolocation">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Geolocation">
         <rdfs:comment xml:lang="en">Geolocation where a compound can be found</rdfs:comment>
         <rdfs:label xml:lang="en">Geolocation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors -->
+    <!-- http://coconut-kg.aksw.org/ontology#MolecularDescriptors -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#MolecularDescriptors">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#MolecularDescriptors">
         <rdfs:comment xml:lang="en">Descriptors of the molecule</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular Descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures -->
+    <!-- http://coconut-kg.aksw.org/ontology#MolecularFeatures -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#MolecularFeatures">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#MolecularFeatures">
         <rdfs:comment xml:lang="en">Molecular features of a compound</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular features</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties -->
+    <!-- http://coconut-kg.aksw.org/ontology#MolecularProperties -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#MolecularProperties">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#MolecularProperties">
         <rdfs:comment xml:lang="en">Molecular properties of a compound</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular properties</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy -->
+    <!-- http://coconut-kg.aksw.org/ontology#Taxonomy -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#Taxonomy">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#Taxonomy">
         <rdfs:comment xml:lang="en">TODO Work in progress, data is shit here</rdfs:comment>
         <rdfs:label xml:lang="en">Taxonomy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers -->
+    <!-- http://coconut-kg.aksw.org/ontology#UniqueIdentifiers -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#UniqueIdentifiers">
+    <owl:Class rdf:about="http://coconut-kg.aksw.org/ontology#UniqueIdentifiers">
         <rdfs:comment xml:lang="en">Unique identifiers of a molecular compound like smiles, inchikeys</rdfs:comment>
         <rdfs:label xml:lang="en">Unique Identifiers</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
     
 
 
@@ -1425,17 +1442,38 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://coconut-kg.aksw.org/ontology# -->
+
+
+    <owl:NamedIndividual rdf:about="http://coconut-kg.aksw.org/ontology#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Annotations
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
 
-    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragments">
+    <rdf:Description rdf:about="http://coconut-kg.aksw.org/ontology#fragments">
         <rdfs:comment xml:lang="en">List of circular fragments (molecular signatures) of the deglycosylated NP.</rdfs:comment>
         <rdfs:label xml:lang="en">fragments</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/owl/owlapi/turtle#fragmentsWithSugar">
+    <rdf:Description rdf:about="http://coconut-kg.aksw.org/ontology#fragmentsWithSugar">
         <rdfs:comment xml:lang="en">List of circular fragments (molecular signatures) of the whole NP.</rdfs:comment>
         <rdfs:label xml:lang="en">fragments with Sugar</rdfs:label>
     </rdf:Description>

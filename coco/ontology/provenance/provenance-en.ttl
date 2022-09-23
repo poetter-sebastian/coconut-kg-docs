@@ -3,9 +3,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
 <..\index-en.html> a prov:Entity;
-	 dc:title "Coconut knowledge graph";
+	 dc:title "coco: The data model for Coconut Knowledge Graph";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://coconut-kg.io/ontology#>;
+	 prov:specializationOf <http://coconut-kg.aksw.org/ontology#>;
 .
 :agent0 a prov:Agent; foaf:name "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy".
