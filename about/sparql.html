@@ -2,7 +2,8 @@
 <html lang="en">
 
   <head>
-    
+
+
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,8 @@
 
   COCONUT-KG
 
-  | contact
+  | SPARQL
+
 </title>
 <meta name="description" content="Data of https://coconut.naturalproducts.net/ reforged for semantic web applications.">
 
@@ -68,36 +70,40 @@
           <li class="nav-item">
             <a class="nav-link" href="../index.html">
               home
-              
-                
-              
+
+
+
+
             </a>
           </li>
-          
+
           <!-- Other pages -->
-             
+
           <li class="nav-item">
             <a class="nav-link" href="../coco/dataset/index.html">
               dataset
             </a>
-        </li>  
+
+        </li>
 
           <li class="nav-item">
               <a class="nav-link" href="../coco/ontology/index.html">
                 ontology
               </a>
-          </li>  
-          
+
+          </li>
+
              <li class="nav-item">
               <a class="nav-link" href="../coco/query/index.html">
                 query
               </a>
-          </li>         
-          
+          </li>
+
           <li class="nav-item">
               <a class="nav-link" href="../partners/index.html">
                 partners
-                
+
+
               </a>
           </li>
 
@@ -105,7 +111,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../contact/index.html">
               team
-              
+
             </a>
           </li>
 
@@ -115,7 +121,7 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          
+
         </ul>
       </div>
     </div>
@@ -132,26 +138,56 @@
     <div class="region region-content">
     <div id="block-system-main" class="block block-system clearfix collapsiblock-processed">
 
-    
   <div class="content">
     <div about="/sparql-docs" typeof="sioc:Item foaf:Document" class="ds-1col node node-dataset view-mode-full clearfix">
 
-  
+
   <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even" property="dc:title">
-  
-  
+
+
 <h1>SPARQL-Docs</h1>
 
 </div>
 </div>
 </div>
+
+
+<h2>Querying Coconut-KG</h2>
+<p>
+  Coconut-KG allows a variety of queries on a large number of natural products.
+  You can query the Coconut-KG online via a SPARQL endpoint (described on this page).
+</p>
+
+<h3>Public SPARQL Endpoint</h3>
+<p>
+  A public SPARQL endpoint for querying the Coconut-KG is at http://coconut-kg.aksw.org/sparql.
+  OpenLink Virtuoso serves as both the back-end database SPARQL query engine and the front-end HTTP/SPARQL server with an nginx overlay primarily to cache results for each submitted query string.
+</p>
+<p><em><strong>NOTE:</strong>&nbsp;Please read the&nbsp;<a href="#public-sparql-endpoint" data-type="internal" data-id="#public-sparql-endpoint">documentation and usage notes</a>&nbsp;about the public SPARQL endpoint carefully <strong>before</strong> you run queries against it. Be aware that as part of our Fair Use Policy, complex queries may be subject to various <a href="#ratesandlimits">restrictions and limitations</a>.</em></p>
+
+
+<h2 id="public-sparql-endpoint">Details of the Public SPARQL Endpoint</h2>
+<h3>Endpoint type</h3>
+<p>
+  The SPARQL Enpoint is provided by the <a href="https://virtuoso.openlinksw.com">OpenLink Software</a> Virtuoso.
+</p>
+
+<h3 id="ratesandlimits">Rates and Limitations</h3>
+
+<p>A Fair Use Policy is in place in order&nbsp;to provide a stable&nbsp;and responsive endpoint for the community. The number of connections-per-second you can make is limited, as are result set sizes&nbsp;and query times, conforming to the following settings:</p>
+
+<pre id="body" class="wp-block-preformatted">ResultSetMaxRows           = 10000
+MaxQueryExecutionTime      =   600  (seconds)
+MaxQueryCostEstimationTime =   400  (seconds)
+Connection limit           =    10  (parallel connections per IP address<em>)</em></pre>
+
+
 </div>
 </div>
 
 
     <!-- Footer -->
 
-    
 <footer class="fixed-bottom">
   <div class="container mt-0">
     © Copyright 2022 COCONUT-KG
@@ -170,14 +206,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
 
-  
 <!-- Mansory & imagesLoaded -->
 <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script defer src="../assets/js/mansory.js" type="text/javascript"></script>
 
-
-  
 
 
 <!-- Medium Zoom JS -->
@@ -188,7 +221,6 @@
 <!-- Load Common JS -->
 <script src="../assets/js/common.js"></script>
 
-  
 <!-- MathJax -->
 <script type="text/javascript">
   window.MathJax = {
@@ -201,7 +233,6 @@
 <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
 
-  
 
 
 
