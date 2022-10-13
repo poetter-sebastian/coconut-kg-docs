@@ -145,6 +145,36 @@
 </div>
 </div>
 </div>
+
+<h2>Querying Coconut-KG</h2>
+<p>
+  Coconut-KG allows a variety of queries on a large number of natural products.
+  You can query the Coconut-KG online via a SPARQL endpoint (described on this page).
+</p>
+
+<h3>Public SPARQL Endpoint</h3>
+<p>
+  A public SPARQL endpoint for querying the Coconut-KG is at http://coconut-kg.aksw.org/sparql.
+  OpenLink Virtuoso serves as both the back-end database SPARQL query engine and the front-end HTTP/SPARQL server with an nginx overlay primarily to cache results for each submitted query string.
+</p>
+<p><em><strong>NOTE:</strong>&nbsp;Please read the&nbsp;<a href="#public-sparql-endpoint" data-type="internal" data-id="#public-sparql-endpoint">documentation and usage notes</a>&nbsp;about the public SPARQL endpoint carefully <strong>before</strong> you run queries against it. Be aware that as part of our Fair Use Policy, complex queries may be subject to various <a href="#ratesandlimits">restrictions and limitations</a>.</em></p>
+
+
+<h2 id="public-sparql-endpoint">Details of the Public SPARQL Endpoint</h2>
+<h3>Endpoint type</h3>
+<p>
+  The SPARQL Enpoint is provided by the <a href="https://virtuoso.openlinksw.com">OpenLink Software</a> Virtuoso.
+</p>
+
+<h3 id="ratesandlimits">Rates and Limitations</h3>
+
+<p>A Fair Use Policy is in place in order&nbsp;to provide a stable&nbsp;and responsive endpoint for the community. The number of connections-per-second you can make is limited, as are result set sizes&nbsp;and query times, conforming to the following settings:</p>
+
+<pre id="body" class="wp-block-preformatted">ResultSetMaxRows           = 10000
+MaxQueryExecutionTime      =   600  (seconds)
+MaxQueryCostEstimationTime =   400  (seconds)
+Connection limit           =    10  (parallel connections per IP address<em>)</em></pre>
+
 </div>
 </div>
 
