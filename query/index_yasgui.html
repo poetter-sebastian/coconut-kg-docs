@@ -125,9 +125,13 @@
 
 
     <!-- Content -->
-
- <iframe  width="100%" height="800px" src="http://coconut-kg.aksw.org/sparql" frameborder="0" scrolling="auto" allowfullscreen>
- </iframe>
+<div class="container mt-5">
+  <div id="yasgui"></div>
+  <script>
+    const yasgui = new Yasgui(document.getElementById("yasgui"), {
+    requestConfig: { endpoint: "http://coconut-kg.aksw.org/sparql" },
+    copyEndpointOnNewTab: false,});
+  </script>
 
 
     <!-- Footer -->
