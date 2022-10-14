@@ -41,8 +41,8 @@
 <!-- Dark Mode -->
 <script src="../assets/js/theme.js"></script>
 
-<link href="./yasgui/yasgui.min.css" rel="stylesheet" type="text/css" />
-<script src="./yasgui/yasgui.min.js"></script>
+<link href="https://unpkg.com/@triply/yasgui/build/yasgui.min.css" rel="stylesheet" type="text/css" />
+<script src="https://unpkg.com/@triply/yasgui/build/yasgui.min.js"></script>
   </head>
 
   <body class="fixed-top-nav ">
@@ -128,7 +128,11 @@
 <div class="container mt-5">
   <div id="yasgui"></div>
   <script>
-    const yasgui = new Yasgui(document.getElementById("yasgui"));
+    const yasgui = new Yasgui(document.getElementById("yasgui"), {
+    requestConfig: { endpoint: "http://coconut-kg.aksw.org/sparql" },
+    copyEndpointOnNewTab: false,});
+    
+    yasqe.setValue("select * where {...}");
   </script>
 
 
