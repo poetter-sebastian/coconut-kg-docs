@@ -55,8 +55,8 @@
     <!-- Nav Bar -->
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
-    
-    <span class="font-weight-bold">COCONUT-KG</span>    
+
+    <span class="font-weight-bold">COCONUT-KG</span>
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="sr-only">Toggle navigation</span>
@@ -155,15 +155,19 @@
 <h2>Querying Coconut-KG</h2>
 <p>
   Coconut-KG allows a variety of queries on a large number of natural products.
-  You can query the Coconut-KG online via a SPARQL endpoint (described on this page).
+  You can query the Coconut-KG online by a SPARQL endpoint.
+  This page describes how.
 </p>
 
-<h3>Public SPARQL Endpoint</h3>
+<h3>SPARQL Endpoint</h3>
 <p>
-  A public SPARQL endpoint for querying the Coconut-KG is at http://coconut-kg.aksw.org/sparql.
-  OpenLink Virtuoso serves as both the back-end database SPARQL query engine and the front-end HTTP/SPARQL server with an nginx overlay primarily to cache results for each submitted query string.
+  At http://coconut-kg.aksw.org/sparql you'll find a SPARQL endpoint.
+  Both back-end and front-end are provided by OpenLink Virtuoso.
+  The back-end serves a SPARQL engine.
+  In the front-end we find a HTTP/SPARQL server with nginx overlay.
 </p>
-<p><em><strong>NOTE:</strong>&nbsp;Please read the&nbsp;<a href="#public-sparql-endpoint" data-type="internal" data-id="#public-sparql-endpoint">documentation and usage notes</a>&nbsp;about the public SPARQL endpoint carefully <strong>before</strong> you run queries against it. Be aware that as part of our Fair Use Policy, complex queries may be subject to various <a href="#ratesandlimits">restrictions and limitations</a>.</em></p>
+<p><em><strong>NOTE:</strong>&nbsp;To use the SPARQL endpoint we recommend to read the&nbsp;<a href="#public-sparql-endpoint" data-type="internal" data-id="#public-sparql-endpoint">documentation</a>&nbsp;first.
+  Queries may be have <a href="#ratesandlimits">limitations</a>.</em></p>
 
 
 <h2 id="public-sparql-endpoint">Details of the Public SPARQL Endpoint</h2>
@@ -174,7 +178,7 @@
 
 <h3 id="ratesandlimits">Rates and Limitations</h3>
 
-<p>A Fair Use Policy is in place in order&nbsp;to provide a stable&nbsp;and responsive endpoint for the community. The number of connections-per-second you can make is limited, as are result set sizes&nbsp;and query times, conforming to the following settings:</p>
+<p>You can make a limited number of connections. The settings can be seen below:</p>
 
 <pre id="body" class="wp-block-preformatted">ResultSetMaxRows           = 10000
 MaxQueryExecutionTime      =   600  (seconds)
