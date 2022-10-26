@@ -1,0 +1,14 @@
+site_name: COCONUT[KG] Docs
+site_url: http://coconut-kg.aksw.org/documentation
+nav:
+    - About: index.md
+    - Extraction process: extraction/index.md
+    - Dataset statistics: dataset/index.md
+    - SPARQL querying: query/index.md
+    - Improving: improve/index.md
+
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: green
