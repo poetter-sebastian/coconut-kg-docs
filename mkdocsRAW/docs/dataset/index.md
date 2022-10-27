@@ -1,11 +1,23 @@
 # Dataset statistics
 
-|            |           |
-|------------|----------:|
-|   triples  | 182872042 |
-|  entities  |  16898993 |
-| properties |     98    |
-|   classes  |     12    |
+<table>
+                        <tr>
+                            <td>triples</td>
+                            <td align="right">182872042</td>
+                        </tr>
+                        <tr>
+                            <td>entities</td>
+                            <td align="right">16898993</td>
+                        </tr>
+                        <tr>
+                            <td>properties</td>
+                            <td align="right">98</td>
+                        </tr>
+                        <tr>
+                            <td>classes</td>
+                            <td align="right">12</td>
+                        </tr>
+                    </table>
 
 **Classes**: They are used to classify a resource. In COCONUT[KG] *coco:Geolocation* would be a class.
 
