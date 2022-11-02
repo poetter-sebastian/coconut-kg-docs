@@ -1,5 +1,7 @@
 site_name: COCONUT[KG] Docs
-site_url: http://coconut-kg.aksw.org/documentation
+site_url: http://coconut-kg.aksw.org/
+extra:
+  homepage: http://coconut-kg.aksw.org/
 nav:
     - About: index.md
     - Extraction process: extraction/index.md
@@ -8,6 +10,8 @@ nav:
     - Improving: improve/index.md
 
 theme:
+  icon:
+    logo: material/arrow-left
   name: material
   palette:
     primary: green
