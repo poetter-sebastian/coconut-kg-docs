@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://coconut-kg.aksw.org/</loc>
-         <lastmod>2022-11-02</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://coconut-kg.aksw.org/dataset/</loc>
-         <lastmod>2022-11-02</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://coconut-kg.aksw.org/extraction/</loc>
-         <lastmod>2022-11-02</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://coconut-kg.aksw.org/improve/</loc>
-         <lastmod>2022-11-02</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>http://coconut-kg.aksw.org/query/</loc>
-         <lastmod>2022-11-02</lastmod>
+         <lastmod>2022-11-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
