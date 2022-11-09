@@ -24,7 +24,7 @@
     queryd = "PREFIX owl:  <http://www.w3.org/2002/07/owl#>" ;
     querye = "PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>" ;
 
-    queryf = "SELECT DISTINCT ?formula, ?name, ?weight, ?smile WHERE {" ;
+    queryf = "SELECT DISTINCT ?formula ?name ?weight ?smile WHERE {" ;
     queryg = "?compound a coco:Compound ." ;
     queryh = "?compound coco:molecularFormula ?formula ." ;
     queryi = "?compound coco:name ?name ." ;
@@ -36,7 +36,8 @@
     querym = "?unique coco:smiles ?smile .}" ;
     
     queryn = "LIMIT 10" ;
-    yasgui.getTab().yasqe.setValue(querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n"+queryg+"\n"+queryh+"\n"+queryi+"\n\n"+queryj+"\n"+queryk+"\n\n"+queryl+"\n"+querym+"\n\n"+queryn);
+    query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n"+queryg+"\n"+queryh+"\n"+queryi+"\n\n"+queryj+"\n"+queryk+"\n\n"+queryl+"\n"+querym+"\n\n"+queryn
+    yasgui.getTab().yasqe.setValue(query);
   </script>
 
 
