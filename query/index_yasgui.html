@@ -17,6 +17,26 @@
     const yasgui = new Yasgui(document.getElementById("yasgui"), {
     requestConfig: { endpoint: "http://coconut-kg.aksw.org/sparql" },
     copyEndpointOnNewTab: false,});
+    
+    querya = "PREFIX coco:  <http://coconut-kg.aksw.org/ontology#>" ;
+    queryb = "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" ;
+    queryc = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" ;
+    queryd = "PREFIX owl:  <http://www.w3.org/2002/07/owl#>" ;
+    querye = "PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>" ;
+
+    queryf = "SELECT DISTINCT ?formula, ?name, ?weight, ?smile WHERE {" ;
+    queryg = "?compound a coco:Compound ." ;
+    queryh = "?compound coco:molecularFormula ?formula ." ;
+    queryi = "?compound coco:name ?name ." ;
+    
+    queryj = "?compound coco:hasMolecularProperties ?properties ." ;
+    queryk = "?properties coco:molecularWeight ?weight ." ;
+    
+    queryl = "?compound coco:isIdentifiedBy ?unique ." ;
+    querym = "?unique coco:smiles ?smile .}" ;
+    
+    queryn = "LIMIT 10" ;
+    yasgui.getTab().yasqe.setValue(querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n"+queryg+"\n"+queryh+"\n"+queryi+"\n\n"+queryj+"\n"+queryk+"\n\n"+queryl+"\n"+querym+"\n\n"+queryn);
   </script>
 
 
