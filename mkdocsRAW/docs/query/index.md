@@ -41,7 +41,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
-SELECT DISTINCT ?formula, ?name, ?weight, ?smile WHERE {
+SELECT DISTINCT ?formula ?name ?weight ?smile WHERE {
   ?compound a coco:Compound . 
   ?compound coco:molecularFormula ?formula .
   ?compound coco:name ?name .
@@ -75,3 +75,5 @@ SELECT DISTINCT ?formula ?weight  WHERE {
 FILTER (?weight > 320.00 && ?weight < 320.20) .
 } 
 ```
+
+You can check out a real simple tutorial for SPARQL [here](https://www.w3.org/TR/sparql11-query/): 
