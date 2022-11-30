@@ -11,7 +11,7 @@
 
     COCONUT[KG]
 
-    | Dataset
+    | License
   </title>
   <meta name="description" content="Data of https://coconut.naturalproducts.net/ reforged for semantic web applications.">
 
@@ -78,7 +78,6 @@
           <li class="nav-item active">
             <a class="nav-link" href="./index.html">
               dataset
-              <span class="sr-only">(current)</span>
             </a>
           </li>
 
@@ -111,6 +110,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../license/index.html">
               license
+              <span class="sr-only">(current)</span>
             </a>
           </li>
 
@@ -127,30 +127,85 @@
 
 </header>
 
-
 <!-- Content -->
+
 <div class="container mt-5">
   <div class="post">
 
     <header class="post-header">
-      <h1 class="post-title">dataset</h1>
-      <p class="post-description">Download or query the project dataset</p>
+      <h1 class="post-title">License</h1>
+      <p class="desc">COCONUT knowledge graph is published under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a>.</p>
+      <p class="desc">The license allows you to share and consume the information as long as it is through COCONUT knowledge graph.</p>
+      <p class="desc">Bellow you will find the license in a human readable format.</p>
+
     </header>
 
     <article>
-
-      <h3>RDF dumps</h3>
-
-      <p>The dataset and it's schema are available for download
-
-      <p>Dataset: <a href="http://coconut-kg.aksw.org/downloads/files/dumps/coconut-knowledge-graph-v0.1.0.ttl">http://coconut-kg.aksw.org/downloads/files/dumps/coconut-knowledge-graph-v.0.1.0.ttl</a></p>
-      <p>Ontology: <a href="http://coconut-kg.aksw.org/downloads/files/schema/coconut_schema-v0.1.0.ttl">http://coconut-kg.aksw.org/downloads/files/schema/coconut_schema-v0.1.0.ttl</a></p>
-
-
-
+      <div>
+        <div>
+          <div>
+            <h3 resource="http://creativecommons.org/ns#Reproduction" rel="cc:permits">You are free to:</h3>
+            <ul class="license-properties">
+              <li class="license share" rel="cc:permits" resource="http://creativecommons.org/ns#Distribution">
+                <strong>Share</strong> — copy and redistribute the material in any medium or format
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p >
+            The licensor cannot revoke these freedoms as long as you follow the license terms.
+          </p>
+        </div>
+        <div>
+          <h3>Under the following terms:</h3>
+          <ul>
+            <li class="license by">
+              <p>
+                <strong>Attribution</strong> — <span rel="cc:requires" resource="http://creativecommons.org/ns#Attribution">You must give <string>credit</strong>, provide a link to the license, and <em>indicate if changes were made</em>. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+                  <span id="by-more-container"></span>
+              </p>
+              <p id="work-attribution-container" style="display:none;">
+                <strong>
+                  Attribute this work:
+                </strong>
+                <br>
+                <input id="work-attribution" value="" type="text" readonly="readonly" onclick="this.select()" onfocus="document.getElementById('work-attribution').select();">
+                <input id="license-code" type="hidden" value="CC BY-NC-ND 4.0">
+                <input id="license-url" type="hidden" value="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                <a href="" id="attribution_help" class="helpLink" tabindex="0" data-original-title="" title="">
+                  <img src="/images/information.png" alt="Information">
+                </a>
+              </p>
+            </li>
+            <li class="license nc" rel="cc:prohibits" resource="http://creativecommons.org/ns#CommercialUse">
+              <p>
+                <strong>NonCommercial</strong> — You may not use the material for <em>commercial purposes</em>.
+                <span id="nc-more-container"></span>
+              </p>
+            </li>
+            <li class="license nd">
+              <p>
+                <strong>NoDerivatives</strong> — If you <em>remix, transform, or build upon</em> the material, you may <strong>not</strong> distribute the modified material.
+                <span id="nd-more-container"></span>
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul id="deed-conditions-no-icons">
+            <li class="license">
+              <strong>No additional restrictions</strong> — You may not apply legal terms or <em>technological measures</em> that legally restrict others from doing anything the license permits.
+            </li>
+          </ul>
+        </div>
     </article>
 
   </div>
+
+</div>
+
+</div>
 
 </div>
 
