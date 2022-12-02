@@ -1,5 +1,7 @@
 # Dataset statistics
 
+
+
 <table>
                         <tr>
                             <td>triples</td>
@@ -17,7 +19,7 @@
                             <td>classes</td>
                             <td align="right">12</td>
                         </tr>
-                    </table>
+</table>
 
 **Classes**: They are used to classify a resource. In COCONUT[KG] *coco:Geolocation* would be a class.
 
@@ -26,3 +28,9 @@
 **Entities**: In this context, an entity is a chemical compound.
 
 **Triples**: The data was stored as RDF triples. A triple consists of subject, predicate and object.
+
+___ 
+
+Below is a table of all the data properties and their appearance count in the dataset:
+
+<object data="property_count.svg" width="700" height="1100"> </object>

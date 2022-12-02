@@ -3,3 +3,5 @@ COCONUT gathers data from over 50 open natural product resources and contains st
 Our knowledge graph is called COCONUT[KG].
 For more information on COCONUT itself, check out their [documentation](https://coconut.naturalproducts.net/documentation).
 
+<object data="processcoco.svg" width="800" height="600"> </object>
+
