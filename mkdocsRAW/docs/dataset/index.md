@@ -5,15 +5,19 @@
 <table>
                         <tr>
                             <td>triples</td>
-                            <td align="right">182872042</td>
+                            <td align="right">296853511</td>
                         </tr>
                         <tr>
                             <td>entities</td>
-                            <td align="right">16898993</td>
+                            <td align="right">1536262</td>
                         </tr>
                         <tr>
-                            <td>properties</td>
-                            <td align="right">98</td>
+                            <td>object properties</td>
+                            <td align="right">15</td>
+                        </tr>
+                        <tr>
+                            <td>data properties</td>
+                            <td align="right">80</td>
                         </tr>
                         <tr>
                             <td>classes</td>
@@ -21,13 +25,15 @@
                         </tr>
 </table>
 
-**Classes**: They are used to classify a resource. In COCONUT[KG] *coco:Geolocation* would be a class.
-
-**Properties**: Are used to add attributes to classes. *coco:molecularWeight* is an example for a property.
+**Triples**: The data was stored as RDF triples. A triple consists of subject, predicate and object.
 
 **Entities**: In this context, an entity is a chemical compound.
 
-**Triples**: The data was stored as RDF triples. A triple consists of subject, predicate and object.
+**Object properties**: Are used to connect classes. *coco:hasDescriptors* is an example for an object property.
+
+**Data properties**: Are used to add attributes to classes. *coco:molecularWeight* is an example for a data property.
+
+**Classes**: They are used to classify a resource. In COCONUT[KG] *coco:Geolocation* would be a class.
 
 ___ 
 

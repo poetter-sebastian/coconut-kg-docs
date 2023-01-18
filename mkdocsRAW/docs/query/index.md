@@ -33,9 +33,9 @@ You can make a limited number of connections. The settings can be seen below:
 **ATTENTION**: *The result size is currently limited to 1000 rows. This way partial results are displayed as complete ones and there is no HTTP error.*
 
 ## SPARQL example queries
-The following query gives you formula, name, weight	and smile of a compound:
+The following query gives you formula, name, weight and smile of a compound:
 ```
-PREFIX coco:  <http://coconut-kg.aksw.org/ontology#>
+PREFIX coco: <http://coconut-kg.aksw.org/ontology#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
@@ -46,8 +46,9 @@ SELECT DISTINCT ?formula ?name ?weight ?smile WHERE {
   ?compound coco:molecularFormula ?formula .
   ?compound coco:name ?name .
 
-  ?compound coco:hasMolecularProperties ?properties .
-  ?properties coco:molecularWeight ?weight .
+  ?compound coco:hasDescriptors ?descriptor .
+  ?descriptor coco:isMolecular ?mdescriptor .
+  ?mdescriptor coco:molecularWeight ?weight .
 
   ?compound coco:isIdentifiedBy ?unique .
   ?unique coco:smiles ?smile .
@@ -56,6 +57,7 @@ LIMIT 10
 ```
 The following query gives you formula and weight of a compound where the weight is between 320.00 and 320.20:
 ```
+PREFIX coco: <http://coconut-kg.aksw.org/ontology#>
 PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
@@ -64,16 +66,14 @@ PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 SELECT DISTINCT ?formula ?weight  WHERE {
   ?compound a coco:Compound . 
   ?compound coco:molecularFormula ?formula .
-  ?compound coco:name ?name .
 
-  ?compound coco:hasMolecularProperties ?properties .
-  ?properties coco:molecularWeight ?weight .
-
-  ?compound coco:isIdentifiedBy ?unique .
-  ?unique coco:smiles ?smile .
+  ?compound coco:hasDescriptors ?descriptor .
+  ?descriptor coco:isMolecular ?mdescriptor .
+  ?mdescriptor coco:molecularWeight ?weight .
 
 FILTER (?weight > 320.00 && ?weight < 320.20) .
 } 
+LIMIT 10
 ```
 
 You can check out a real simple tutorial for SPARQL [here](https://www.w3.org/TR/sparql11-query/): 

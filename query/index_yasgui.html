@@ -29,14 +29,16 @@
     queryh = "?compound coco:molecularFormula ?formula ." ;
     queryi = "?compound coco:name ?name ." ;
     
-    queryj = "?compound coco:hasMolecularProperties ?properties ." ;
-    queryk = "?properties coco:molecularWeight ?weight ." ;
+    queryj = "?compound coco:hasDescriptors ?descriptor ." ;
+    queryk = "?descriptor coco:isMolecular ?mdescriptor ." ;
+    queryl = "?mdescriptor coco:molecularWeight ?weight ." ;
     
-    queryl = "?compound coco:isIdentifiedBy ?unique ." ;
-    querym = "?unique coco:smiles ?smile .}" ;
     
-    queryn = "LIMIT 10" ;
-    query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n"+queryg+"\n"+queryh+"\n"+queryi+"\n\n"+queryj+"\n"+queryk+"\n\n"+queryl+"\n"+querym+"\n\n"+queryn
+    querym = "?compound coco:isIdentifiedBy ?unique ." ;
+    queryn = "?unique coco:smiles ?smile .}" ;
+    
+    queryo = "LIMIT 10" ;
+    query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n"+queryg+"\n"+queryh+"\n"+queryi+"\n\n"+queryj+"\n"+queryk+"\n"+queryl+"\n\n"+querym+"\n"+queryn+"\n\n"+queryo ;
     yasgui.getTab().yasqe.setValue(query);
   </script>
 
