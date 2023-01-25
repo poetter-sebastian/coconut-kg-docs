@@ -30,7 +30,7 @@ You can make a limited number of connections. The settings can be seen below:
             MaxQueryCostEstimationTime =   400  (seconds)
             Connection limit           =    10  (parallel connections per IP address
 
-**ATTENTION**: *The result size is currently limited to 1000 rows. This way partial results are displayed as complete ones and there is no HTTP error.*
+**ATTENTION**: *The result size is currently limited to 10000 rows. This way partial results are displayed as complete ones and there is no HTTP error.*
 
 ## SPARQL example queries
 The following query gives you formula, name, weight and smile of a compound:
