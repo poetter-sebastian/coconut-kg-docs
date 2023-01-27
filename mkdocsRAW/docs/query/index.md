@@ -25,12 +25,12 @@ The SPARQL enpoint is provided by the [OpenLink Software Virtuoso](https://virtu
 
 You can make a limited number of connections. The settings can be seen below:
 
-            ResultSetMaxRows           = 10000
+            ResultSetMaxRows           = 25000
             MaxQueryExecutionTime      =   600  (seconds)
             MaxQueryCostEstimationTime =   400  (seconds)
             Connection limit           =    10  (parallel connections per IP address
 
-**ATTENTION**: *The result size is currently limited to 10000 rows. This way partial results are displayed as complete ones and there is no HTTP error.*
+**ATTENTION**: *The result size is currently limited to 25000 rows. This way partial results are displayed as complete ones and there is no HTTP error.*
 
 ## SPARQL example queries
 The following query gives you formula, name, weight and smile of a compound:

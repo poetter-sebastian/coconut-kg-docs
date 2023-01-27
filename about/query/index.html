@@ -425,12 +425,12 @@ In the front-end we find a HTTP/SPARQL server with nginx overlay.</p>
 <p>The SPARQL enpoint is provided by the <a href="https://virtuoso.openlinksw.com">OpenLink Software Virtuoso</a></p>
 <h3 id="rates-and-limitations">Rates and limitations</h3>
 <p>You can make a limited number of connections. The settings can be seen below:</p>
-<pre><code>        ResultSetMaxRows           = 10000
+<pre><code>        ResultSetMaxRows           = 25000
         MaxQueryExecutionTime      =   600  (seconds)
         MaxQueryCostEstimationTime =   400  (seconds)
         Connection limit           =    10  (parallel connections per IP address
 </code></pre>
-<p><strong>ATTENTION</strong>: <em>The result size is currently limited to 10000 rows. This way partial results are displayed as complete ones and there is no HTTP error.</em></p>
+<p><strong>ATTENTION</strong>: <em>The result size is currently limited to 25000 rows. This way partial results are displayed as complete ones and there is no HTTP error.</em></p>
 <h2 id="sparql-example-queries">SPARQL example queries</h2>
 <p>The following query gives you formula, name, weight and smile of a compound:</p>
 <pre><code>PREFIX coco: &lt;http://coconut-kg.aksw.org/ontology#&gt;
